@@ -25,9 +25,8 @@ It is mandatory for firms to report Scope 1 and 2, which should be included in e
 The data of the carbon intensity per firm and Scope was already provided. The original data sets span from 1999 to 2020, however, we extract the data from the years 2005 to 2019 for our analysis as the other years have a notable amount of missing data and are thus less interesting to include. We estimate that 14 years of data is sufficiently representative for this report. Furthermore, we create monthly carbon intensity data by reporting the same carbon intensity for a given year twelve times, such that the annual value appears in each month of that year. Additionally, the carbon intensity, found in the scope intensity data sets, for each company and each year were summed up. (Note here that we use \"Scopes\" for scope intensities, which are the carbon intensities mentioned above) Meaning that we create a new data set, in which a company has a new value each year/month (depending on the data needed), which represents the sum of its three Scopes. (To improve the reading flow, the report will from here on refer to the sum of the Scopes as **Scopes**.) Yet, one must note that the Scopes are interlinked and often prone to double counting as the same emission could be counted up to three times in a portfolio reaching up to 40% of total emissions. Unfortunately, it is impossible to eliminate this problem completely [@bib:Jondeau]. Hence, it is important to keep this information in the back of one's mind when analysing the summary statistics and histograms of the carbon intensity.
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/185908671-7d750c2e-4feb-4a75-bdda-2e62f430e2e2.png" width="600">
-</p>
-
+    <img src="https://user-images.githubusercontent.com/110820736/185908671-7d750c2e-4feb-4a75-bdda-2e62f430e2e2.png" width="600" height="220">
+</p> 
 ```
 Figure 1: Mean and median intensities of Scopes
 ```
@@ -38,9 +37,13 @@ Finally, after looking at these two graphs, one could simply say that there are 
 
 We find that the number one polluter is a firm named \"Biffa\", which is a waste management company. In Figure [2a] one can observe their development over three years. In 2008 Severn Trent, which had acquired the company in 1991, transferred it to a consortium formed by 3 entities [@bib:Wiki_Biffa]. This is probably why there the data stops in 2007. Their occupation explains the abnormally high emissions. Furthermore, Scope 1 was the main contributor (with values in the thousands). This is logical because Scope 1 encompasses the emissions from burning fossil fuels and production processes owned or controlled by a firm.
 
-[Biffas' carbon intensity]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185913271-98297e00-2ab5-4cb5-94b9-9580ecef573a.png" width="600" height="220">
+</p>
 
-[International Powers' carbon intensity]{.image}
+```
+Figure 2: The worst polluters
+```
 
 The second worst polluter is \"International Power\". Figure [2b] shows an astonishing evolution in their Scope intensities. Its emissions dropped each year this was due to the Scope 1 (main driver) decreasing drastically. Hence, as in the case of Biffa, its main driver was Scope 1, which is reasonable as the company is working in the energy sector (mostly non-renewable). Then the data ends in 2011 as the company merged with another in the year that followed [@bib:international_power].
 
@@ -346,228 +349,51 @@ The company \"CREALOGIX HOLDING\" has a very low Scope 1 and 2. This is a result
 - [Elodie Savioz](https://www.linkedin.com/in/elodie-savioz-4733871aa/)
 
 # Sources
----
-nocite: "[@*]"
-references:
-- author:
-  - family: Jondeau
-    given: Eric
-  id: "bib:Jondeau"
-  issued: 2022
-  title: Sustainable and entrepreunarial finance
-  type: article-journal
-- accessed: 2022-04-29
-  author:
-  - family: Chen
-    given: James
-  id: "bib:csa"
-  issued: 2020
-  title: Cross-sectional analysis
-  type: webpage
-  url: "https://www.investopedia.com/terms/c/cross_sectional_analysis.asp"
-- author:
-  - family: COUNT
-    given: WE
-  id: "bib:scope_france"
-  title: Est-ce obligatoire de réaliser son bilan carbone (BEGES)?
-  type: webpage
-  url: "https://www.wecount.io/post/est-ce-obligatoire-de-réaliser-son-bilan-carbone-beges"
-- author:
-  - family: NewCo
-  id: "bib:holding"
-  title: "Qu'est-ce qu'une holding ?"
-  type: webpage
-  url: "https://newco.ch/fr/blog/qu-est-ce-qu-une-holding\\--52"
-- accessed: 2022-05-04
-  author:
-  - family: Biffa
-  id: "bib:Biffa"
-  issued: 2022
-  title: Biffa
-  type: webpage
-  url: "https://www.biffa.co.uk/"
-- accessed: 2022-05-04
-  author:
-  - family: Engie
-  id: "bib:international_power"
-  issued: 2011
-  title: International power plc and GDF SUEZ successfully create a
-    global leader in independent power generation
-  type: webpage
-  url: "https://www.engieresources.com/international-power-plc-and-gdf-suez-successfully-create-a-global-leader-in-independent-power-generation"
-- author:
-  - family: Bolton
-    given: Patrick
-  - family: Kacperczyk
-    given: Marcin
-  container-title: Journal of Financial Economics
-  id: "bib:return-emission"
-  issue: 142
-  issued: 2021
-  page: 517-549
-  publisher: ELSEVIER
-  title: Do investors care about carbon risk?
-  type: article-journal
-- accessed: 2022-05-05
-  id: "bib:eea2014"
-  issued: 2016
-  title: EU greenhouse gas emissions at lowest level since 1990
-  type: webpage
-  url: "https://www.eea.europa.eu/highlights/eu-greenhouse-gas-emissions-at\\#:\\~:text=European%20Union%20(EU)%20greenhouse%20gas,European%20Environment%20Agency%20(EEA)."
-- accessed: 2022-05-09
-  author:
-  - family: Hayes
-    given: Adan
-  id: "bib:long"
-  issued: 2021
-  title: Long position
-  type: webpage
-  url: "https://www.investopedia.com/terms/l/long.asp"
-- accessed: 2022-05-10
-  author:
-  - family: Commission
-    given: European
-  id: "bib:Kyoto2"
-  title: Kyoto 2nd commitment period (2013--20)
-  type: webpage
-  url: "https://ec.europa.eu/clima/eu-action/climate-strategies-targets/progress-made-cutting-emissions/kyoto-2nd-commitment-period-2013-20_en"
-- accessed: 2022-05-10
-  author:
-  - family: Commission
-    given: European
-  id: "bib:Kyoto1"
-  title: Kyoto 1st commitment period (2008--12)
-  type: webpage
-  url: "https://ec.europa.eu/clima/eu-action/climate-strategies-targets/progress-made-cutting-emissions/kyoto-1st-commitment-period-2008-12_en"
-- accessed: 2022-05-10
-  author:
-  - family: Commission
-    given: European
-  id: "bib:EUClimateLaw"
-  title: European climate law
-  type: webpage
-  url: "https://ec.europa.eu/clima/eu-action/european-green-deal/european-climate-law_en"
-- accessed: 2022-05-10
-  id: "bib:Wiki_Biffa"
-  title: Biffa
-  type: webpage
-  url: "https://en.wikipedia.org/wiki/Biffa"
-- accessed: 2022-05-11
-  id: "bib:umicore"
-  title: About umicore
-  type: webpage
-  url: "https://www.umicore.com/en/about/"
-- accessed: 2022-05-11
-  id: "bib:BASF"
-  title: BASF
-  type: webpage
-  url: "https://en.wikipedia.org/wiki/BASF"
-- accessed: 2022-05-11
-  author:
-  - family: Wikipédia
-  id: "bib:systemair"
-  issued: 2022
-  title: Systemair
-  type: webpage
-  url: "https://fr.wikipedia.org/wiki/Systemair"
-- accessed: 2022-05-11
-  author:
-  - family: Wikipédia
-  id: "bib:stellantis"
-  issued: 2022
-  title: Stellantis
-  type: webpage
-  url: "https://fr.wikipedia.org/wiki/Stellantis"
-- accessed: 2022-05-11
-  id: "bib:dno"
-  title: DNO
-  type: webpage
-  url: "https://www.dno.no"
-- accessed: 2022-05-11
-  id: "bib:zignago_vetro"
-  title: ZIGNAGO VETRO
-  type: webpage
-  url: "https://zignagovetro.com/fr/"
-- accessed: 2022-05-11
-  id: "bib:amiad_water_systems"
-  title: Amiad water systems
-  type: webpage
-  url: "https://fr.amiad.com"
-- accessed: 2022-05-11
-  id: "bib:rea"
-  title: R.e.a holdings plc
-  type: webpage
-  url: "https://www.rea.co.uk/websites/reaholdingsplc/English/1/home.html"
-- accessed: 2022-05-11
-  author:
-  - family: Wikipédia
-  id: "bib:evn"
-  issued: 2019
-  title: EVN (entreprise)
-  type: webpage
-  url: "https://fr.wikipedia.org/wiki/EVN\\_(entreprise)"
-- accessed: 2022-05-11
-  id: "bib:tubacex"
-  title: TUBACEX GROUP
-  type: webpage
-  url: "https://www.tubacex.com"
-- accessed: 2022-05-11
-  id: "bib:tubacex2"
-  title: TUBACEX GROUP, environment
-  type: webpage
-  url: "https://www.tubacex.com/tubacex-group/prevention-environment-quality/environment/"
-- accessed: 2022-05-10
-  id: "bib:crealogix"
-  title: CREALOGIX
-  type: webpage
-  url: "https://crealogix.com/en"
-- accessed: 2022-05-10
-  id: "bib:massimo"
-  title: Massimo zanetti
-  type: webpage
-  url: "https://www.mzb-group.com"
-- accessed: 2020-10-17
-  author:
-  - family: Witlox
-    given: Kasja
-  - family: Keller
-    given: Regula
-  - family: Jungbluth
-    given: Niels
-  id: "bib:esu2015poster"
-  issued: 2015
-  title: A LCA case study of hand washing with liquid and bar soap
-  type: webpage
-  url: "http://esu-services.ch/fileadmin/download/witlox-2015-LCA-soap-poster.pdf"
-- author:
-  - family: Koehler
-    given: Annette
-  - family: Wildbolz
-    given: Caroline
-  container-title: Environmental science & technology
-  id: "bib:koehler2009comparing"
-  issue: 22
-  issued: 2009
-  page: 8643-8651
-  publisher: ACS Publications
-  title: "Comparing the environmental footprints of home-care and
-    personal-hygiene products: The relevance of different life-cycle
-    phases"
-  title-short: Comparing the environmental footprints of home-care and
-    personal-hygiene products
-  type: article-journal
-  volume: 43
-- author:
-  - family: Feld
-    given: Brad
-  - family: Mendelson
-    given: Jason
-  id: "bib:ventureDeals"
-  issued: 2019
-  publisher: John Wiley & Sons Inc
-  publisher-place: New York, United States
-  title: "Venture deals : Be smarter than your lawyer and venture
-    capitalist"
-  title-short: Venture deals
-  type: book
----
+
+[1] James Chen. Cross-Sectional Analysis. 2020. url: https://www.investopedia.com/terms/c/cross_sectional_analysis.asp (visited on 04/29/2022).
+
+[2] Eric Jondeau. “Sustainable and Entrepreunarial Finance”. In: (2022).
+
+[3] WE COUNT. Est-ce obligatoire de réaliser son bilan carbone (BEGES)? url: https://www.wecount.io/post/est-ce-obligatoire-de-r%C3%A9aliser-son-bilan-carbone-beges.
+
+[4] Biffa. url: https://en.wikipedia.org/wiki/Biffa (visited on 05/10/2022).
+
+[5] Engie. International Power plc and GDF SUEZ Successfully Create a Global Leader in Independent Power Generation. 2011. url: https://www.engieresources.com/international-power-plc-and-gdf-suez-successfully-create-a-global-leader-in-independent-power-generation (visited on 05/04/2022).
+
+[6] EU greenhouse gas emissions at lowest level since 1990. 2016. url: https://www.eea.europa.eu/highlights/eu-greenhouse-gas-emissions-at#:~:text=European%20Union%20(EU)%20greenhouse%20gas,European%20Environment%20Agency%20(EEA). (visited on 05/05/2022).
+
+[7] European Commission. Kyoto 1st commitment period (2008–12). url: https://ec.europa.eu/clima/eu-action/climate-strategies-targets/progress-made-cutting-emissions/kyoto-1st-commitment-period-2008-12_en (visited on 05/10/2022).
+
+[8] European Commission. Kyoto 2nd commitment period (2013–20). url: https://ec.europa.eu/clima/eu-action/climate-strategies-targets/progress-made-cutting-emissions/kyoto-2nd-commitment-period-2013-20_en (visited on 05/10/2022).
+
+[9] European Commission. European Climate Law. url: https://ec.europa.eu/clima/eu-action/european-green-deal/european-climate-law_en (visited on 05/10/2022).
+
+[10] Patrick Bolton and Marcin Kacperczyk. “Do investors care about carbon risk?” In: Journal of Financial Economics 142 (2021), pp. 517–549.
+
+[11] NewCo. Qu’est-ce qu’une holding ? url: https://newco.ch/fr/blog/qu-est-ce-qu-une-holding--52.
+
+[12] R.E.A Holdings plc. url: https://www.rea.co.uk/websites/reaholdingsplc/English/1/home.html (visited on 05/11/2022).
+
+[13] Wikipédia. EVN (entreprise). 2019. url: https://fr.wikipedia.org/wiki/EVN_(entreprise) (visited on 05/11/2022).
+
+[14] TUBACEX GROUP. url: https://www.tubacex.com (visited on 05/11/2022).
+
+[15] TUBACEX GROUP, Environment. url: https://www.tubacex.com/tubacex-group/prevention-environment-quality/environment/ (visited on 05/11/2022).
+
+[16] About umicore. url: https://www.umicore.com/en/about/ (visited on 05/11/2022).
+
+[17] BASF. url: https://en.wikipedia.org/wiki/BASF (visited on 05/11/2022).
+
+[18] Wikipédia. Systemair. 2022. url: https://fr.wikipedia.org/wiki/Systemair (visited on 05/11/2022).
+
+[19] Wikipédia. Stellantis. 2022. url: https://fr.wikipedia.org/wiki/Stellantis (visited on 05/11/2022).
+
+[20] DNO. url: https://www.dno.no (visited on 05/11/2022).
+
+[21] ZIGNAGO VETRO. url: https://zignagovetro.com/fr/ (visited on 05/11/2022).
+
+[22] Amiad Water Systems. url: https://fr.amiad.com (visited on 05/11/2022).
+
+[23] Massimo Zanetti. url: https://www.mzb-group.com (visited on 05/10/2022).
+
+[24] CREALOGIX. url: https://crealogix.com/en (visited on 05/10/2022).

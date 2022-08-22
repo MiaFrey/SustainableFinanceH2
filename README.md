@@ -49,29 +49,53 @@ The second worst polluter is \"International Power\". Figure [2b] shows an aston
 
 Next, we can see that the minimum values (plotted in Figure [3a]) range from 5 to 7096 tCO2e/mln$ and are on average around 256 tCO2e/mln$. While the maximum scope intensities range from 24 to 25,729 tCO2e/mln$ and are on average 462 tCO2e/mln$. Both these values are also sensitive to extremes but they give a great picture of the emission range across firms. For instance, it can be observed that the graph with the minima has more variation, hence the minimum Scope values differ more from one firm to another.
 
-[Scopes minimum intensity]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185914665-c785bb7a-8372-4981-8743-087558f5de7a.png" width="600" height="220">
+</p>
 
-[Scopes maximum intensity]{.image}
+```
+Figure 3: Minimum and maximum intensities of Scopes
+```
 
 The last summary statistic we explore is the standard deviation (Figure [4]). It measures how dispersed the data is concerning the mean. Its value ranges between 0.2 and 12,089 tCO2e/mln$ and is on average 82 tCO2e/mln$.
 
-[Scopes' standard deviation]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185914787-abbdb704-2b00-4bda-95d4-ce88c995bad3.png" width="400" height="280">
+</p>
+
+```
+Figure 4: Scopes’ standard deviation
+```
 
 Given the data, Figure [5a] depicts the boxplot obtained in 2019 with a range (y-axis) of 0 to 1,400 tCO2e/mln$. Upon comparing this with Figure [5b] [@bib:Jondeau], we observe that both plots are very similar. This is great as it demonstrates that the data collection and cleaning of this report were done to a good standard and are representative of the European situation. It is interesting to note that the emerging countries have a huge interquartile range, meaning that some really small but also extremely big companies exist. China is a big influencer in the Asian market. Europe however has a relatively smaller interquartile range and is comparable to North America and the Pacific. Yet, the median values of all regions, depicted by the horizontal line within each box, are similar.
 
-[Boxplot of the sum of Scopes of European firms]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185915099-a1e94edc-f6a4-4fbc-8e35-987037b38626.png" width="600" height="220">
+</p>
 
-[Boxplot from the course]{.image}
+```
+Figure 5: Comparison data to of the mean Scopes linear with range 50 & 2000 CO2e
+```
 
 Next, we move onto the histogram analysis. First, the mean Scope values are put in a histogram (Figure [6]). However, as observable in the graph on the top, it does not reveal much information for the specific data interval we are interested in. The problem is that the highest values are over thousands bigger than the smallest Thus, we transformed the distribution by looking at the logarithm. This is an easy way of displaying data over a wide range of values in a compact way. Meaning that the axis compresses the range into a non-linear form. Hence, the new y-axis represents the density. The logarithmic histogram is skewed to the right implying that the mean is bigger than the median value. This can also be observed in the data mentioned before, as 338 tCO2e/mln$ (mean) is bigger than 325 tCO2e/mln$ (median). This shows that a few firms emit a lot.
 
-[Histogram of the mean Scopes linear and logarithmic]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185915304-5f474b1b-9e8f-41fc-9509-fcfb45436196.png" width="400" height="280">
+</p>
+
+```
+Figure 6: Histogram of the mean Scopes linear and logarithmic
+```
 
 To take a closer look at the values that range below 2000 tCO2e/mln$, two more histograms are constructed. In Figure [7a] the values below 2000 tCO2e/mln$ are depicted. Once again the histogram resembles the first one as most of the data takes very small values. Thus, the histogram in Figure [7b] shows a small part of the total x-axis, namely the one between 0 and 50 tCO2e/mln$. It depicts that no firm had a minimum mean emission lower than 20 tCO2e/mln \$. Once again, this data was already found and reported previously.
 
-[Histogram of the mean Scopes linear with range 2000 tCO2e/mln$]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185915446-5960ba11-19ea-43f2-b718-2d4acfae9487.png" width="600" height="220">
+</p>
 
-[Histogram of the mean Scopes linear with range 50 tCO2e/mln$]{.image}
+```
+Figure 7: Histogram of the mean Scopes linear with range 50 & 2000 CO2e
+```
 
 To observe the evolution of Scopes through the years, we plot the mean Scope emissions per year (Figure [8]). This is a key plot and shows that the emissions dropped drastically, especially, in 2008 because of the financial crisis. It then increased a little again, leading to another big drop in the following years until 2014. This is due to a variety of reasons from the growth of renewables, the use of less carbon-intensive fuels, energy efficiency improvements to structural changes in the economy and a recession [@bib:eea2014]. This graph is \"great news\", as the emissions already drastically decreased, however it is sadly not sufficient enough a drop to limit global warming to 2 degrees.
 
@@ -79,13 +103,23 @@ In 1997 the Kyoto Protocol was established. It is a legally binding treaty with 
 
 Based on this we decided to compare the starting year 2005 and the most recent year with the most data in 2019.
 
-[Mean Scopes emission per year]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185915598-00a3a628-4596-4a11-aabc-1a6eaa9ac730.png" width="400" height="280">
+</p>
+
+```
+Figure 8: Mean Scopes emission per year
+```
 
 The results obtained are quite similar to before (Figure [9]). Again little information can be extracted from the linear scales and once transformed, we observe that the logarithmic scales are skewed to the right, indicating that a few companies emit quite a lot.
 
-[Linear and logarithmic histogram of the year 2005 Scopes]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185915792-f4c89d36-aafb-4ec6-948f-73ce699b69ab.png" width="600" height="220">
+</p>
 
-[Linear and logarithmic histogram of the year 2019 Scopes (linear and logarithmic]{.image}
+```
+Figure 9: Histogram of the year 2005 and 2019 in linear and logarithmic scales
+```
 
 ## Question 2
 
@@ -97,7 +131,13 @@ This is why the code of [Homework 1](https://github.com/MiaFrey/SustainableFinan
 
 The efficient frontier representing the efficient portfolios and the attainable returns that can be targeted with these 50 randomly selected firms is the following.
 
-[Efficient frontier of the 50 selected firms]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185915971-310394b3-4965-4598-8bb2-ac79a075dc04.png" width="400" height="280">
+</p>
+
+```
+Figure 10: Efficient frontier of the 50 selected firms
+```
 
 The weighted-average carbon intensity (WACI) is a measure of the portfolio's exposure to polluting firms. The higher a portfolio's investment in carbon-intensive firms, the higher its weighted-average carbon intensity is. The measurement's unit is in tons of $CO_2$ equivalents per million dollars of revenue $[tCO_2eq/$mln]$. The following formula is used to calculate the WACI of a portfolio in year $t$ [@bib:Jondeau]:
 
@@ -108,15 +148,33 @@ Where $N_t$ is the number of firms in the portfolio in period $t$, $w_{i,t}$ is 
 More precisely in the case of this exercise, the calculation of the weighted average carbon intensity is done with the mean carbon intensity of each firm over time multiplied by the corresponding weights of the firms in the portfolio. The summary statistics of the results are reported below. One can observe the usual positive correlation between return and volatility, this being that the higher the return, the higher the volatility. The maximal Sharpe ratio observable in the table is
 equal to 0.093 and corresponds to a portfolio WACI that is almost half the one of a portfolio maximising return.
 
-[Summary statistics of the different portfolios created]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185916205-18a62a9a-f1f9-4b38-9e4b-58956e3e1f91.png" width="400" height="280">
+</p>
+
+```
+Figure 11: Summary statistics of the different portfolios created
+```
 
 One can see also in Figure [11] and [12] that aiming for a higher return increases the volatility as well as the carbon intensity of the portfolio. Bolton and Kacperczyk (2021) found that carbon emissions significantly affect stock returns and this is in line with what is found in the data of this report [@bib:return-emission]. The more one increases the targeted return the higher the carbon intensity, thus the higher the negative impact of the portfolio on the environment.
 
-[WACI of a portfolio in function of its variability]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185916381-63274b29-91b9-4b71-bf5f-1384cf0cdced.png" width="400" height="280">
+</p>
+
+```
+Figure 12: WACI of a portfolio in function of its variability
+```
 
 When looking at the top 10 emitting firms within the 50 randomly selected (Figure [13]), one can see that the first one is more or less equal to the sum of the second to fifth ones and that together they represent around two-thirds of the emissions of the 10 worst firms. Indeed, the most polluting company has a carbon intensity of around 5000 tCO2e/mln$, and the following companies have results of around 1000 tCO2e/mln$.
 
-[Top 10 carbon intensive firms within the 50 randomly selected sample]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185916540-df28f8d8-857f-4187-921f-c8f39d37c094.png" width="400" height="280">
+</p>
+
+```
+Figure 13: Top 10 carbon intensive firms within the 50 randomly selected sample
+```
 
 In this report, the focus lies with European companies. Hence, to be able to compare European companies with those of the rest of the world the following summary table is presented. It summarises the emissions of the 25 most highly emitting companies in the world (considering the sum of Scopes 1, 2, and 3):
 
@@ -170,11 +228,25 @@ First of all, it can be observed that the most polluting companies in the world 
 
 Even if the sample of the top emitters is not representative of the average, it can still be noted that Asia produces about 81% of the emissions produced by the 25 most polluting companies. In second place is the USA with about 13%. These results are in agreement with the following table depicting that the largest emitters in 2017 were Asia followed by the USA and Europe [@bib:Jondeau]:
 
-[Emissions by continent in 2017]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185916702-bbd5ef1f-8eaa-4373-96ab-9482d7d38583.png" width="400" height="280">
+</p>
+
+```
+Table 2: Emission per continent
+```
 
 Currently, it is the firms located in Asia, a continent in full expansion and growth, that emit the most. In conclusion, Europe is currently not the largest emitter in the world. However, historically speaking Europe is the biggest polluter with about 33% of the global cumulative emissions. These results are consistent with the demographics of each continent. Indeed, Europe has already experienced its growth phase and is now stagnating or even declining, while Asia is still growing in terms of population and economically and is therefore evolving rapidly [@bib:Jondeau].
 
 Next comes the analysis of the three highest emitters in Europe, according to (Figure [14]), which drive the carbon intensity of the portfolios up.
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185916902-7b45854a-15df-487d-aba2-2e1afd70cbbe.png" width="400" height="280">
+</p>
+
+```
+Figure 14: Emissions by continent in 2017
+```
 
 ## Firm 1 : R.E.A Holding
 
@@ -182,11 +254,13 @@ The biggest polluter is a holding company. This is a firm that takes financial s
 
 REA invests mainly in the cultivation of palm oil, a very polluting sector[@bib:rea]. That is why it is not surprising that this company is at the top of the list.
 
-[Scope 1]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185917043-c5fdd3ef-5412-4e62-8569-c739ff086329.png" width="400" height="280">
+</p>
 
-[Scope 2]{.image}
-
-[Scope 3]{.image}
+```
+Figure 15: Scopes of the firm REA HOLDINGS
+```
 
 ## Firm 2: EVN
 
@@ -196,11 +270,13 @@ The first thing to note is that the values for the years 2007 through 2012 are m
 
 Secondly, one can observe that Scope 1 has the highest emissions, which is consistent with the theory. Indeed, EVN is an energy production company whose main emission is linked to the energy they produce.
 
-[Scope 1]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185917215-464441c9-750a-4242-b88a-9437ec49d4a6.png" width="400" height="280">
+</p>
 
-[Scope 2]{.image}
-
-[Scope 3]{.image}
+```
+Figure 16: Scopes of the firm EVN
+```
 
 ## Firm 3: Tubacex
 
@@ -212,11 +288,13 @@ Scope 3 is responsible for its high overall score. This is reasonable as Scope 3
 
 Their website leads us to believe that they are trying to become more sustainable, notably by \"advanced materials leading to significantly improved energy efficiency; and reduction in CO2 emissions, as a result\"[@bib:tubacex2]. We note here that by implementing these various measures, they can decrease Scope 1 and 2 but not 3 which is responsible for their high result. Nevertheless, this is better than nothing but it means that it would not have a significant impact on their total carbon intensity.
 
-[Scope 1]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185917401-68cb2369-46b9-497c-b7ed-d64498044c6b.png" width="400" height="280">
+</p>
 
-[Scope 2]{.image}
-
-[Scope 3]{.image}
+```
+Figure 17: Scopes of the firm TUBACEX
+```
 
 ## Question 3
 
@@ -224,17 +302,25 @@ Their website leads us to believe that they are trying to become more sustainabl
 
 This exercise addresses building a decarbonized portfolio, hence applying portfolio optimization including carbon risk. It is based on building a minimum variance portfolio and then adding constraints since it is assumed that an investor does not want to put money into a highly polluting company, meaning a company with a high carbon intensity. Thus, a threshold is fixed to restrict the exposure of the portfolio to the carbon intensity (idiosyncratic carbon risk) [@bib:Jondeau]. The threshold is the top tercile of the distribution in month t-1 for this exercise. Here the exclusion approach is used [@bib:Jondeau].
 
-[Homework 1]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185917518-c7ccf3d9-8d71-42d1-9a7e-c4671e66d0f7.png" width="400" height="280">
+</p>
 
-[Homework 3]{.image}
+```
+Figure 18: Summary statistics
+```
 
 In theory, firms with a higher carbon intensity have a higher return since carbon-intensive firms are perceived as riskier, and hence the investor wants to be compensated for the additional risk taken [@bib:return-emission]. In this exercise, the firms in the top tercile with the highest carbon intensity values are excluded. Hence, theoretically the firms with the highest average return disappear and the new portfolio will have a lower return. The same holds for volatility. As explained in Question 2, a firm with a high carbon intensity will have higher volatility. Yet, this is not what we find upon analysing the summary statistics. In Figure [18a] the annual average return is 0.047 and the volatility 0.154 but in [18b] the return is bigger (0.067) but the volatility (0.149) is smaller. Even though the minimum return got smaller (-0.157 \> -0.132) but the maximum one only slightly bigger (0.126 \< 0.153). Thus, the 50 randomly selected firms did not have a positive correlation between carbon intensity and return. This must be due to chance as they were selected from a large pool of possible firms. All of these points can also be observed in Figure [19].
 
 Furthermore, one also observes that the Sharpe ratio increases after the exclusion of the most polluting companies (0.227 \< 0.364). This measure of risk-adjusted return shows that it is more interesting to invest in the minimum variance portfolio with the exclusion. Yet, it remains lower than 1. The potential gain generated is therefore not high enough to compensate for the risk taken by investing, even though this is rare to find. Finally, by omitting the top tercile of the polluting companies, the overall carbon intensity of the portfolio decreases drastically. In [Homework 1](https://github.com/MiaFrey/SustainableFinanceH1) the portfolio had a carbon intensity of 111.591 tCO2e/mln$ versus \"only\" 31.9005 tCO2e/mln$ in Homework 2. It decreased by more than one third since by excluding the top tercile of polluters one excludes more than a third of the emissions.
 
-[Homework 1]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185917647-0483cd86-7424-4ea2-985a-358cf38516a7.png" width="400" height="280">
+</p>
 
-[Homework 3]{.image}
+```
+Figure 19: Minimum variance portfolio return over time
+```
 
 ## Question 4
 
@@ -245,11 +331,15 @@ After sorting the carbon intensities in ascending order, they are separated into
 The average returns of the equally-weighted (EW) and value-weighted (VW) portfolios per quintile, from lowest (q1) to highest (q5) are depicted
 on the following graphs:
 
+<img width="490" alt="image" src="https://user-images.githubusercontent.com/110820736/185917820-ee2cc430-d9af-4b6d-9020-e671046f30d0.png">
+
 [Equally weighted portfolio]{.image}
 
 [Value weighted portfolio]{.image}
 
 To see the effect of the size of the Scope intensities more clearly, below is the plot of only the first and last quintiles.
+
+<img width="496" alt="image" src="https://user-images.githubusercontent.com/110820736/185917892-75d05b11-fb52-4ad3-9446-b60c449fbd9e.png">
 
 [Equally weighted portfolio]{.image}
 
@@ -269,6 +359,8 @@ To find the relationship between the return and the carbon emissions, the correl
 In Question 2, it is explained that the relationship between returns and the emission rate of firms is positive. In Figure [22], in both cases, the correlation is low but positive. Additionally, it can be observed that it increased for each quintile (except between quintiles 4 and 5 in the value-weighted portfolio). These results are consistent with the findings of Bolton and Kacperczyka. They call it the carbon premium and explain it with the fact that investing in carbon-intensive industries is perceived as riskier and thus the investors need to be compensated for it [@bib:return-emission].
 
 Average returns for the short-long (SL) portfolio:
+
+<img width="491" alt="image" src="https://user-images.githubusercontent.com/110820736/185918037-e12fa114-9f7d-4bb0-9755-f709bbdc31e9.png">
 
 [Equally weighted portfolio]{.image}
 
@@ -296,6 +388,8 @@ Where $\alpha$ are the weights, $\Sigma$ is the covariance matrix, e is a vector
 This is all based on fundamental-based risk management in which the exposure of the portfolio to carbon intensity, an idiosyncratic carbon risk, is restricted. In this exercise, we take a portfolio threshold approach, consisting of portfolio optimisation under an additional constraint of an upper bound for the WACI of the whole portfolio. An alternative method could have been to impose an individual threshold, such that we eliminate companies from our portfolio ($\alpha$ = 0) which
 have a carbon intensity above a pre-defined threshold [@bib:Jondeau].
 
+<img width="490" alt="image" src="https://user-images.githubusercontent.com/110820736/185918120-5b2b96d9-0e1b-4208-a783-7ac4604c5cb4.png">
+
 [Without an additional constraint]{.image}
 
 [With an additional constraint]{.image}
@@ -306,7 +400,10 @@ hereby it can be checked that the constraint was respected.
 
 Upon carrying out this analysis, we wanted to make sure that we only considered firms that had available Scopes 1,2 & 3 over the time period studied. Otherwise, it would have be easy to wrongly re-allocate weights, such that firms with no data take up a larger portion of the portfolio, since they would not influence the WACI of the portfolio. To avoid this mistake, it is crucial to filter the data pre-optimisation. We thus chose to focus on the years that had the most available scope data, to have a large basket of firms for selecting our 50 random firms (new50). Hence, we took data over 4 years from January 2016 to December 2019, and then dropped remaining firms which had NaNs in their scopes. Among the remaining firms, we then randomly selected 50. Disclaimer: It is still possible to have weights that are NaN in our portfolio, this is because upon looking at each month individually (in our loop), we drop firms without return data, so as not to include them in the portfolio. If these happen to be a part of our set of 50 random firms, then there will be no weight associated with these particular firms.
 
-As a result of the new optimisation, it is interesting to visualise how the weights of the different companies changes within the portfolios (Figure [25]). To do so, the average difference over all months between the weight of each firm given the additional constraint and the weight of the firm without the additional constraint are plotted. In this way, firms with a positive difference, represented in the bar chart by the bars above zero, are those in which there was an increased investment, post-introduction of the new constraint. Whereas the negative bars indicate that firms lost weight in the portfolio with the additional constraint. Hence, it can be assumed, a priori, that the companies with positive bars are greener, because we increased our investment in them to satisfy the decarbonisation constraint, whereas the firms with negative bars wou
+As a result of the new optimisation, it is interesting to visualise how the weights of the different companies changes within the portfolios (Figure [25]). To do so, the average difference over all months between the weight of each firm given the additional constraint and the weight of the firm without the additional constraint are plotted. In this way, firms with a positive difference, represented in the bar chart by the bars above zero, are those in which there was an increased investment, post-introduction of the new constraint. Whereas the negative bars indicate that firms lost weight in the portfolio with the additional constraint. Hence, it can be assumed, a priori, that the companies with positive bars are greener, because we increased our investment in them to satisfy the decarbonisation constraint.
+
+<img width="496" alt="image" src="https://user-images.githubusercontent.com/110820736/185918196-cbbd6b27-b051-4793-95b6-873a3bbd0595.png">
+
 
 [Differences of the allocated weights per firm. $\alpha_{HW3} - \alpha_{HW1}$]{.image}
 
@@ -332,11 +429,16 @@ Table [3] [@bib:umicore], [@bib:BASF], [@bib:systemair], [@bib:stellantis], [@bi
 
 To push the analysis of Figure [25] further, the company with the biggest (CREALOGIX HOLDING) and smallest (MASSIMO ZANETTI) difference in weight allocation are analysed in more depth.
 
+<img width="497" alt="image" src="https://user-images.githubusercontent.com/110820736/185918367-2ab4844a-c92d-4128-aa74-d2ce128c361b.png">
+
 [MASSIMO ZANETTI]{.image}
 
 [CREALOGIX HOLDING]{.image}
 
 The two graphs in Figure [26] explain why more weight was allocated to \"CREALOGIX HOLDING\" than to \"MASSIMO ZANETTI\". Indeed, the emissions are much higher for the company \"MASSIMO ZANETTI\". It is a coffee production company and its Scope 3 has the highest emissions [@bib:massimo]. This result is consistent with reality because coffee is one of the products that emit the most CO2 during its entire supply chain. This can be observed in Figure [27], where it can be seen that the biggest part of the emissions is related to the cultivation of the coffee beans, which is included in Scope 3 of the company.
+
+<img width="254" alt="image" src="https://user-images.githubusercontent.com/110820736/185918429-b81ef31a-8542-423b-a6c0-5c58d8f8da71.png">
+
 
 [Food greenhouse gas emissions across the food supply chain]{.image}
 

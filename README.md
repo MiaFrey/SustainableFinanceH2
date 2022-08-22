@@ -13,9 +13,9 @@ Our Group was asked to look at **European firms with available scope 1 to 3 emis
 
 Our report focuses on European firms with available carbon intensity data for Scopes 1, 2 and 3. A cross-sectional analysis aims to have an industry-wide lens of European firms to identify companies with a particular strength or weakness. It allows us to understand the \"what\" rather than the \"why\". This means that instead of focusing on the relationships between the different companies to be compared, the investor uses cross-sectional analysis to identify their characteristics [@bib:csa].
 
-As aforementioned, the variable of interest in this paper is carbon intensity. The latter measures the volume of carbon emissions per million dollars of revenue and is expressed in tonnes of CO2 equivalents per million dollars of revenue (tCO2e/mln \$) [@bib:Jondeau]. The carbon intensity of a portfolio per period (CI) is calculated as follows:
+As aforementioned, the variable of interest in this paper is carbon intensity. The latter measures the volume of carbon emissions per million dollars of revenue and is expressed in tonnes of CO2 equivalents per million dollars of revenue (tCO2e/mln$) [@bib:Jondeau]. The carbon intensity of a portfolio per period (CI) is calculated as follows:
 
-$$CI_t^{(p)} = \frac{\sum_{i=1}^{N_t} \cdot o_{i,t}^{(p)} \cdot E_{i,t}}{\sum_{i=1}^{N_t} \cdot o_{i,t}^{(p)} \cdot Rev_{i,t}}
+$$CI_t^{(p)} = \frac{\sum_{i=1} \cdot o_{i,t}^{(p)} \cdot E_{i,t}}{\sum_{i=1} \cdot o_{i,t}^{(p)} \cdot Rev_{i,t}}
    \hspace{0.2cm}$$
 
 According to the GHG Protocol corporate standard, a firm's emissions are divided into three Scopes. Scope 1 emissions are the GHG emissions generated from burning fossil fuels, as well as production processes that are owned or controlled by the firm. They are the so-called direct emissions. Scope 2 emissions stem from the consumption of purchased electricity, heat, or steam by the firm. They are the first-tier indirect emissions. Finally, Scope 3 emissions are other indirect emissions from the value chain of the reporting firm. They include upstream emissions, such as energy, utilities, materials, chemicals, industrials, and consumer goods. Scope 3 also encompasses downstream Scope 3 emissions of financed emissions and sold products, such as oil and gas, automobiles, technology, apparel, and chemicals [@bib:Jondeau].
@@ -24,13 +24,17 @@ It is mandatory for firms to report Scope 1 and 2, which should be included in e
 
 The data of the carbon intensity per firm and Scope was already provided. The original data sets span from 1999 to 2020, however, we extract the data from the years 2005 to 2019 for our analysis as the other years have a notable amount of missing data and are thus less interesting to include. We estimate that 14 years of data is sufficiently representative for this report. Furthermore, we create monthly carbon intensity data by reporting the same carbon intensity for a given year twelve times, such that the annual value appears in each month of that year. Additionally, the carbon intensity, found in the scope intensity data sets, for each company and each year were summed up. (Note here that we use \"Scopes\" for scope intensities, which are the carbon intensities mentioned above) Meaning that we create a new data set, in which a company has a new value each year/month (depending on the data needed), which represents the sum of its three Scopes. (To improve the reading flow, the report will from here on refer to the sum of the Scopes as **Scopes**.) Yet, one must note that the Scopes are interlinked and often prone to double counting as the same emission could be counted up to three times in a portfolio reaching up to 40% of total emissions. Unfortunately, it is impossible to eliminate this problem completely [@bib:Jondeau]. Hence, it is important to keep this information in the back of one's mind when analysing the summary statistics and histograms of the carbon intensity.
 
-[Scopes mean intensity]{.image}
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/185908671-7d750c2e-4feb-4a75-bdda-2e62f430e2e2.png" width="600">
+</p>
 
-[Scopes median intensity]{.image}
+```
+Figure 1: Mean and median intensities of Scopes
+```
 
-To begin with, Figure [1](#fig:Scatter_mean){reference-type="ref" reference="fig:Scatter_mean"} depicts the mean (over time) of the Scope intensities for every European firm. One can observe that most companies lie between 0 and 2000 tCO2e/mln \$ and the mean is 337.82 tCO2e/mln \$. Yet, the range including the outliers is huge, namely from 21 to 14,462 tCO2e/mln \$. Figure [2](#fig:Scatter_median){reference-type="ref" reference="fig:Scatter_median"} shows the median of the Scope intensities. Its mean is slightly lower, at 325 tCO2e/mln \$, and its range is 22 to 15,981 tCO2e/mln \$. The two graphs are similar and show the same two companies with the highest emissions.
+To begin with, Figure [1a] depicts the mean (over time) of the Scope intensities for every European firm. One can observe that most companies lie between 0 and 2000 tCO2e/mln$ and the mean is 337.82 tCO2e/mln$. Yet, the range including the outliers is huge, namely from 21 to 14,462 tCO2e/mln$. Figure [2](#fig:Scatter_median){reference-type="ref" reference="fig:Scatter_median"} shows the median of the Scope intensities. Its mean is slightly lower, at 325 tCO2e/mln$, and its range is 22 to 15,981 tCO2e/mln$. The two graphs are similar and show the same two companies with the highest emissions.
 
-Finally, after looking at these two graphs, one could simply say that there are extreme values that influence our average. Indeed, the mean is influenced by outliers while the median is a robust measure in the presence of outliers. For instance, when taking the median of the mean (Figure [1](#fig:Scatter_mean){reference-type="ref" reference="fig:Scatter_mean"}) this gives 137.79 tCO2e/mln \$ which is much lower than our mean of the mean (338 tCO2e/mln \$)). However, we cannot remove the extreme values here because they represent high emitting companies and are not necessarily errors in the data. For the rest of the exercise, the average is used to summarise the statistics as this is commonly done.
+Finally, after looking at these two graphs, one could simply say that there are extreme values that influence our average. Indeed, the mean is influenced by outliers while the median is a robust measure in the presence of outliers. For instance, when taking the median of the mean (Figure [1](#fig:Scatter_mean){reference-type="ref" reference="fig:Scatter_mean"}) this gives 137.79 tCO2e/mln$ which is much lower than our mean of the mean (338 tCO2e/mln$)). However, we cannot remove the extreme values here because they represent high emitting companies and are not necessarily errors in the data. For the rest of the exercise, the average is used to summarise the statistics as this is commonly done.
 
 We find that the number one polluter is a firm named \"Biffa\", which is a waste management company. In Figure [3](#fig:Plot_highest_emission_firm){reference-type="ref" reference="fig:Plot_highest_emission_firm"} one can observe their development over three years. In 2008 Severn Trent, which had acquired the company in 1991, transferred it to a consortium formed by 3 entities [@bib:Wiki_Biffa]. This is probably why there the data stops in 2007. Their occupation explains the abnormally high emissions. Furthermore, Scope 1 was the main contributor (with values in the thousands). This is logical because Scope 1 encompasses the emissions from burning fossil fuels and production processes owned or controlled by a firm.
 
@@ -40,33 +44,33 @@ We find that the number one polluter is a firm named \"Biffa\", which is a waste
 
 The second worst polluter is \"International Power\". Figure [4](#fig:Plot_2nd_highest_emission_firmpng){reference-type="ref" reference="fig:Plot_2nd_highest_emission_firmpng"} shows an astonishing evolution in their Scope intensities. Its emissions dropped each year this was due to the Scope 1 (main driver) decreasing drastically. Hence, as in the case of Biffa, its main driver was Scope 1, which is reasonable as the company is working in the energy sector (mostly non-renewable). Then the data ends in 2011 as the company merged with another in the year that followed [@bib:international_power].
 
-Next, we can see that the minimum values (plotted in Figure [5](#fig:Scatter_min){reference-type="ref" reference="fig:Scatter_min"}) range from 5 to 7096 tCO2e/mln \$ and are on average around 256 tCO2e/mln \$. While the maximum scope intensities range from 24 to 25,729 tCO2e/mln \$ and are on average 462 tCO2e/mln \$. Both these values are also sensitive to extremes but they give a great picture of the emission range across firms. For instance, it can be observed that the graph with the minima has more variation, hence the minimum Scope values differ more from one firm to another.
+Next, we can see that the minimum values (plotted in Figure [5](#fig:Scatter_min){reference-type="ref" reference="fig:Scatter_min"}) range from 5 to 7096 tCO2e/mln$ and are on average around 256 tCO2e/mln$. While the maximum scope intensities range from 24 to 25,729 tCO2e/mln$ and are on average 462 tCO2e/mln$. Both these values are also sensitive to extremes but they give a great picture of the emission range across firms. For instance, it can be observed that the graph with the minima has more variation, hence the minimum Scope values differ more from one firm to another.
 
 [Scopes minimum intensity]{.image}
 
 [Scopes maximum intensity]{.image}
 
-The last summary statistic we explore is the standard deviation (Figure [7](#fig:Scatter_std){reference-type="ref" reference="fig:Scatter_std"}). It measures how dispersed the data is concerning the mean. Its value ranges between 0.2 and 12,089 tCO2e/mln \$ and is on average 82 tCO2e/mln \$.
+The last summary statistic we explore is the standard deviation (Figure [7](#fig:Scatter_std){reference-type="ref" reference="fig:Scatter_std"}). It measures how dispersed the data is concerning the mean. Its value ranges between 0.2 and 12,089 tCO2e/mln$ and is on average 82 tCO2e/mln$.
 
 [Scopes' standard deviation]{.image}
 
-Given the data, Figure [8](#fig:Boxplot_as_course){reference-type="ref" reference="fig:Boxplot_as_course"} depicts the boxplot obtained in 2019 with a range (y-axis) of 0 to 1,400 tCO2e/mln \$. Upon comparing this with Figure [9](#fig:Boxplot_course){reference-type="ref" reference="fig:Boxplot_course"} [@bib:Jondeau], we observe that both plots are very similar. This is great as it demonstrates that the data collection and cleaning of this report were done to a good standard and
+Given the data, Figure [8](#fig:Boxplot_as_course){reference-type="ref" reference="fig:Boxplot_as_course"} depicts the boxplot obtained in 2019 with a range (y-axis) of 0 to 1,400 tCO2e/mln$. Upon comparing this with Figure [9](#fig:Boxplot_course){reference-type="ref" reference="fig:Boxplot_course"} [@bib:Jondeau], we observe that both plots are very similar. This is great as it demonstrates that the data collection and cleaning of this report were done to a good standard and
 are representative of the European situation. It is interesting to note that the emerging countries have a huge interquartile range, meaning that some really small but also extremely big companies exist. China is a big influencer in the Asian market. Europe however has a relatively smaller interquartile range and is comparable to North America and the Pacific. Yet, the median values of all regions, depicted by the horizontal line within each box, are similar.
 
 [Boxplot of the sum of Scopes of European firms]{.image}
 
 [Boxplot from the course]{.image}
 
-Next, we move onto the histogram analysis. First, the mean Scope values are put in a histogram (Figure [10](#fig:histo_mean_log){reference-type="ref" reference="fig:histo_mean_log"}). However, as observable in the graph on the top, it does not reveal much information for the specific data interval we are interested in. The problem is that the highest values are over thousands bigger than the smallest Thus, we transformed the distribution by looking at the logarithm. This is an easy way of displaying data over a wide range of values in a compact way. Meaning that the axis compresses the range into a non-linear form. Hence, the new y-axis represents the density. The logarithmic histogram is skewed to the right implying that the mean is bigger than the median value. This can also be observed in the data mentioned before, as 338 tCO2e/mln \$ (mean) is bigger than 325 tCO2e/mln \$ (median). This shows that a few firms emit a lot.
+Next, we move onto the histogram analysis. First, the mean Scope values are put in a histogram (Figure [10](#fig:histo_mean_log){reference-type="ref" reference="fig:histo_mean_log"}). However, as observable in the graph on the top, it does not reveal much information for the specific data interval we are interested in. The problem is that the highest values are over thousands bigger than the smallest Thus, we transformed the distribution by looking at the logarithm. This is an easy way of displaying data over a wide range of values in a compact way. Meaning that the axis compresses the range into a non-linear form. Hence, the new y-axis represents the density. The logarithmic histogram is skewed to the right implying that the mean is bigger than the median value. This can also be observed in the data mentioned before, as 338 tCO2e/mln$ (mean) is bigger than 325 tCO2e/mln$ (median). This shows that a few firms emit a lot.
 
 [Histogram of the mean Scopes linear and logarithmic]{.image}
 
-To take a closer look at the values that range below 2000 tCO2e/mln \$, two more histograms are constructed. In Figure [11](#fig:histo_mean_2000){reference-type="ref" reference="fig:histo_mean_2000"} the values below 2000 tCO2e/mln \$ are depicted. Once again the histogram resembles the first one as most of
-the data takes very small values. Thus, the histogram in Figure [12](#fig:histo_mean_50){reference-type="ref" reference="fig:histo_mean_50"} shows a small part of the total x-axis, namely the one between 0 and 50 tCO2e/mln \$. It depicts that no firm had a minimum mean emission lower than 20 tCO2e/mln \$. Once again, this data was already found and reported previously.
+To take a closer look at the values that range below 2000 tCO2e/mln$, two more histograms are constructed. In Figure [11](#fig:histo_mean_2000){reference-type="ref" reference="fig:histo_mean_2000"} the values below 2000 tCO2e/mln$ are depicted. Once again the histogram resembles the first one as most of
+the data takes very small values. Thus, the histogram in Figure [12](#fig:histo_mean_50){reference-type="ref" reference="fig:histo_mean_50"} shows a small part of the total x-axis, namely the one between 0 and 50 tCO2e/mln$. It depicts that no firm had a minimum mean emission lower than 20 tCO2e/mln \$. Once again, this data was already found and reported previously.
 
-[Histogram of the mean Scopes linear with range 2000 tCO2e/mln \$]{.image}
+[Histogram of the mean Scopes linear with range 2000 tCO2e/mln$]{.image}
 
-[Histogram of the mean Scopes linear with range 50 tCO2e/mln \$]{.image}
+[Histogram of the mean Scopes linear with range 50 tCO2e/mln$]{.image}
 
 To observe the evolution of Scopes through the years, we plot the mean Scope emissions per year (Figure [13](#fig:mean_plot){reference-type="ref" reference="fig:mean_plot"}). This is a key plot and shows that the emissions dropped drastically, especially, in 2008 because of the financial crisis. It then increased a little again, leading to another big drop in the following years until 2014. This is due to a variety of reasons from the growth of renewables, the use of less carbon-intensive fuels, energy efficiency improvements to structural changes in the economy and a recession [@bib:eea2014]. This graph is \"great news\", as the emissions already drastically decreased, however it is sadly not sufficient enough a drop to limit global warming to 2 degrees.
 
@@ -94,7 +98,7 @@ The efficient frontier representing the efficient portfolios and the attainable 
 
 [Efficient frontier of the 50 selected firms]{.image}
 
-The weighted-average carbon intensity (WACI) is a measure of the portfolio's exposure to polluting firms. The higher a portfolio's investment in carbon-intensive firms, the higher its weighted-average carbon intensity is. The measurement's unit is in tons of $CO_2$ equivalents per million dollars of revenue $[tCO_2eq/\$mln]$. The following formula is used to calculate the WACI of a portfolio in year $t$ [@bib:Jondeau]:
+The weighted-average carbon intensity (WACI) is a measure of the portfolio's exposure to polluting firms. The higher a portfolio's investment in carbon-intensive firms, the higher its weighted-average carbon intensity is. The measurement's unit is in tons of $CO_2$ equivalents per million dollars of revenue $[tCO_2eq/$mln]$. The following formula is used to calculate the WACI of a portfolio in year $t$ [@bib:Jondeau]:
 
 $$WACI = \Sigma_{i=1}^{N_t} w_{i,t} \cdot \frac{E_{i,t}}{Rev_{i,t}} = \Sigma_{i=1}^{N_t} w_{i,t} \cdot CI_{i,t}$$
 
@@ -109,7 +113,7 @@ One can see also in Figure [2](#fig:Q2_sumStats){reference-type="ref" reference=
 
 [WACI of a portfolio in function of its variability]{.image}
 
-When looking at the top 10 emitting firms within the 50 randomly selected (Figure [4](#fig:top10){reference-type="ref" reference="fig:top10"}), one can see that the first one is more or less equal to the sum of the second to fifth ones and that together they represent around two-thirds of the emissions of the 10 worst firms. Indeed, the most polluting company has a carbon intensity of around 5000 tCO2e/mln \$, and the following companies have results of around 1000 tCO2e/mln \$.
+When looking at the top 10 emitting firms within the 50 randomly selected (Figure [4](#fig:top10){reference-type="ref" reference="fig:top10"}), one can see that the first one is more or less equal to the sum of the second to fifth ones and that together they represent around two-thirds of the emissions of the 10 worst firms. Indeed, the most polluting company has a carbon intensity of around 5000 tCO2e/mln$, and the following companies have results of around 1000 tCO2e/mln$.
 
 [Top 10 carbon intensive firms within the 50 randomly selected sample]{.image}
 
@@ -150,7 +154,7 @@ In this report, the focus lies with European companies. Hence, to be able to com
 :::
 :::
 
-First of all, it can be observed that the most polluting companies in the world emit much more than the ones in Europe. Indeed, the emission of the 25 highest firms is around 15'000 tCO2e/mln \$ which is three times higher than the European firm emitting the most and around 15 times higher than the other highest emitters of Europe. Moreover, these companies are often in Asia. To better understand the results the following table summarises the data by continent:
+First of all, it can be observed that the most polluting companies in the world emit much more than the ones in Europe. Indeed, the emission of the 25 highest firms is around 15'000 tCO2e/mln$ which is three times higher than the European firm emitting the most and around 15 times higher than the other highest emitters of Europe. Moreover, these companies are often in Asia. To better understand the results the following table summarises the data by continent:
 
 ::: {#tab:EmPerComp}
      Continent      Emissions     Share
@@ -225,7 +229,7 @@ This exercise addresses building a decarbonized portfolio, hence applying portfo
 
 In theory, firms with a higher carbon intensity have a higher return since carbon-intensive firms are perceived as riskier, and hence the investor wants to be compensated for the additional risk taken [@bib:return-emission]. In this exercise, the firms in the top tercile with the highest carbon intensity values are excluded. Hence, theoretically the firms with the highest average return disappear and the new portfolio will have a lower return. The same holds for volatility. As explained in Question 2, a firm with a high carbon intensity will have higher volatility. Yet, this is not what we find upon analysing the summary statistics. In Figure [1](#fig:Stat_old){reference-type="ref" reference="fig:Stat_old"} the annual average return is 0.047 and the volatility 0.154 but in [2](#fig:Stat_new){reference-type="ref" reference="fig:Stat_new"} the return is bigger (0.067) but the volatility (0.149) is smaller. Even though the minimum return got smaller (-0.157 \> -0.132) but the maximum one only slightly bigger (0.126 \< 0.153). Thus, the 50 randomly selected firms did not have a positive correlation between carbon intensity and return. This must be due to chance as they were selected from a large pool of possible firms. All of these points can also be observed in Figure [\[fig:MV\]](#fig:MV){reference-type="ref" reference="fig:MV"}.
 
-Furthermore, one also observes that the Sharpe ratio increases after the exclusion of the most polluting companies (0.227 \< 0.364). This measure of risk-adjusted return shows that it is more interesting to invest in the minimum variance portfolio with the exclusion. Yet, it remains lower than 1. The potential gain generated is therefore not high enough to compensate for the risk taken by investing, even though this is rare to find. Finally, by omitting the top tercile of the polluting companies, the overall carbon intensity of the portfolio decreases drastically. In [Homework 1](https://github.com/MiaFrey/SustainableFinanceH1) the portfolio had a carbon intensity of 111.591 tCO2e/mln \$ versus \"only\" 31.9005 tCO2e/mln \$ in Homework 2. It decreased by more than one third since by excluding the top tercile of polluters one excludes more than a third of the emissions.
+Furthermore, one also observes that the Sharpe ratio increases after the exclusion of the most polluting companies (0.227 \< 0.364). This measure of risk-adjusted return shows that it is more interesting to invest in the minimum variance portfolio with the exclusion. Yet, it remains lower than 1. The potential gain generated is therefore not high enough to compensate for the risk taken by investing, even though this is rare to find. Finally, by omitting the top tercile of the polluting companies, the overall carbon intensity of the portfolio decreases drastically. In [Homework 1](https://github.com/MiaFrey/SustainableFinanceH1) the portfolio had a carbon intensity of 111.591 tCO2e/mln$ versus \"only\" 31.9005 tCO2e/mln$ in Homework 2. It decreased by more than one third since by excluding the top tercile of polluters one excludes more than a third of the emissions.
 
 [Homework 1]{.image}
 
@@ -340,6 +344,13 @@ cultivation of the coffee beans, which is included in Scope 3 of the company.
 
 The company \"CREALOGIX HOLDING\" has a very low Scope 1 and 2. This is a result of the fact that it is a holding company. This means that it has few direct emissions. Moreover, it is a holding company that mainly supports banks, thus leading to a low Scope 3[@bib:crealogix].
 
+# Collaborators
+- [Mia Frey](https://www.linkedin.com/in/mia-frey-28209a208/)
+- [Louis Delesert](https://www.linkedin.com/in/louis-delessert-5ab43b221/)
+- [Jasmina Djordevic](https://www.linkedin.com/in/jasmina-d-4151161b2/)
+- [Elodie Savioz](https://www.linkedin.com/in/elodie-savioz-4733871aa/)
+
+# Sources
 ---
 nocite: "[@*]"
 references:

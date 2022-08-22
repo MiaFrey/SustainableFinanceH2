@@ -8,7 +8,7 @@ The objectives are the following:
 
 Our Group was asked to look at **European firms with available scope 1 to 3 emissions** (Trucost).
 
-## Exercise 1
+## Question 1
 - **Report summary statistics (mean, median, min, max, standard deviation) on the cross-sectional distribution of the carbon intensity. Draw the histogram of the cross-sectional distribution of the variable of interest and comment on the summary statistics and the histogram.**
 
 Our report focuses on European firms with available carbon intensity data for Scopes 1, 2 and 3. A cross-sectional analysis aims to have an industry-wide lens of European firms to identify companies with a particular strength or weakness. It allows us to understand the \"what\" rather than the \"why\". This means that instead of focusing on the relationships between the different companies to be compared, the investor uses cross-sectional analysis to identify their characteristics [@bib:csa].
@@ -82,7 +82,8 @@ The results obtained are quite similar to before (Figure [\[fig:histo\]](#fig:hi
 
 [Linear and logarithmic histogram of the year 2019 Scopes (linear and logarithmic]{.image}
 
-## Exercise 2
+## Question 2
+
 - **In Question 5 of Homework 1, you calculated efficient portfolios with various target returns. Take these portfolios, calculate and report the weighted-average carbon intensity of these portfolios (you can take the average carbon intensity for each firm over time). Comment on the carbon intensity of the portfolios. Which firms (e.g. top 10; report firm names along with ISIN) are driving the carbon intensity up? Plot on the volatility-carbon intensity space the various portfolios (i.e., make a plot similar to the efficient frontier except that carbon intensity replaces the return on the y-axis).**
 
 One thing to note for this exercise and the entire Homework 2 is that the list of 50 companies selected was changed between the first and third assignments,as the list of random firms was not saved in the first homework.
@@ -211,3 +212,356 @@ Their website leads us to believe that they are trying to become more sustainabl
 [Scope 2]{.image}
 
 [Scope 3]{.image}
+
+## Question 3
+
+- **This question is a follow-up to Question 8 of Homework 1. First, take the same 50 selected firms. Then, create a minimum variance portfolio with monthly rebalancing with an additional constraint: you exclude the worst firms in terms of most polluting (high carbonintensity) firms. Specifically, exclude the top tercile of the distribution in month t - 1 for the carbon intensity. Report summary statistics on the performance (return, risk, Sharpe ratio) of this portfolio as well as its carbon intensity. How do the performance measures (return, risk, Sharpe ratio) compare with the minimum variance portfolio from Question 4 of Homework 1.**
+
+This exercise addresses building a decarbonized portfolio, hence applying portfolio optimization including carbon risk. It is based on building a minimum variance portfolio and then adding constraints since it is assumed that an investor does not want to put money into a highly polluting company, meaning a company with a high carbon intensity. Thus, a threshold is fixed to restrict the exposure of the portfolio to the carbon intensity (idiosyncratic carbon risk) [@bib:Jondeau]. The threshold is the top tercile of the distribution in month t-1 for this exercise. Here the exclusion approach is used [@bib:Jondeau].
+
+[Homework 1]{.image}
+
+[Homework 3]{.image}
+
+In theory, firms with a higher carbon intensity have a higher return since carbon-intensive firms are perceived as riskier, and hence the investor wants to be compensated for the additional risk taken [@bib:return-emission]. In this exercise, the firms in the top tercile with the highest carbon intensity values are excluded. Hence, theoretically the firms with the highest average return disappear and the new portfolio will have a lower return. The same holds for volatility. As explained in exercise 2, a firm with a high carbon intensity will have higher volatility. Yet, this is not what we find upon analysing the summary statistics. In Figure [1](#fig:Stat_old){reference-type="ref" reference="fig:Stat_old"} the annual average return is 0.047 and the volatility 0.154 but in [2](#fig:Stat_new){reference-type="ref" reference="fig:Stat_new"} the return is bigger (0.067) but the volatility (0.149) is smaller. Even though the minimum return got smaller (-0.157 \> -0.132) but the maximum one only slightly bigger (0.126 \< 0.153). Thus, the 50 randomly selected firms did not have a positive correlation between carbon intensity and return. This must be due to chance as they were selected from a large pool of possible firms. All of these points can also be observed in Figure [\[fig:MV\]](#fig:MV){reference-type="ref" reference="fig:MV"}.
+
+Furthermore, one also observes that the Sharpe ratio increases after the exclusion of the most polluting companies (0.227 \< 0.364). This measure of risk-adjusted return shows that it is more interesting to invest in the minimum variance portfolio with the exclusion. Yet, it remains lower than 1. The potential gain generated is therefore not high enough to compensate for the risk taken by investing, even though this is rare to find. Finally, by omitting the top tercile of the polluting companies, the overall carbon intensity of the portfolio decreases drastically. In Homework 1 the portfolio had a carbon intensity of 111.591 tCO2e/mln \$ versus \"only\" 31.9005 tCO2e/mln \$ in Homework 3. It decreased by more than one third since by excluding the top tercile of polluters one excludes more than a third of the emissions.
+
+[Homework 1]{.image}
+
+[Homework 3]{.image}
+
+## Question 4
+
+ - **For each month, sort firms based on your group's variable of interest (carbon intensity) into quintiles. Create equally-weighted and value-weighted portfolios for each period and each score or carbon intensity quintile. Report the average returns for each quintile portfolio as well as a portfolio that goes long in the highest quintile and short in the lowest quintile. Comment on your results. What can explain the relationship between the return of your portfolios and firms' carbon emissions?**
+
+After sorting the carbon intensities in ascending order, they are separated into quintiles. Quintile 5 contains the most polluting firms this is why the portfolio goes short in that part and long in the lowest quintile to purchase even more green firms because the aim is to invest in green. Hence, the performance (return) of the short side (quintile 5) is subtracted from the performance of the long (quintile 1).
+
+The average returns of the equally-weighted (EW) and value-weighted (VW) portfolios per quintile, from lowest (q1) to highest (q5) are depicted
+on the following graphs:
+
+[Equally weighted portfolio]{.image}
+
+[Value weighted portfolio]{.image}
+
+To see the effect of the size of the Scope intensities more clearly, below is the plot of only the first and last quintiles.
+
+[Equally weighted portfolio]{.image}
+
+[Value weighted portfolio]{.image}
+
+For the equally weighted (EW) portfolio, the average return of Q1 is 0.0082, and for Q5 0.0085. The difference is extremely small ($\Delta$ = 0.0003) and thus insignificant. This means that the most polluting European firms had on average almost the same return as the least polluting ones. However, the value-weighted (VW) portfolio has a lower return in the Q1 with 0.0035 compared to Q5 with 0.0061. This is consistent with the correlation mentioned in Question 2 (bigger polluter
+=\> larger return). For the VW portfolio, this disparity is larger ($\Delta$ = 0.0028).
+
+In theory, the equally-weighted portfolio outperforms the value-weighted one because it gives higher weights to small firms and thus is able to have higher returns since small companies tend to have a higher return. This can also be observed in this exercise since for the first (0.0082 \> 0.0035) and the fifth (0.0085 \> 0.0061) quintile the equally-weighted portfolio yields a higher return.
+
+To find the relationship between the return and the carbon emissions, the correlation was calculated for each quintile and is depicted in the tables below.
+
+[Equally weighted portfolio]{.image}
+
+[Value weighted portfolio]{.image}
+
+In Question 2, it is explained that the relationship between returns and the emission rate of firms is positive. In Figure [\[fig:Stat_both\]](#fig:Stat_both){reference-type="ref" reference="fig:Stat_both"}, in both cases, the correlation is low but positive. Additionally, it can be observed that it increased for each quintile (except between quintiles 4 and 5 in the value-weighted portfolio). These results are consistent with the findings of Bolton and Kacperczyka. They call it the carbon premium and explain it with the fact that investing in carbon-intensive industries is perceived as riskier and thus the investors need to be compensated for it [@bib:return-emission].
+
+Average returns for the short-long (SL) portfolio:
+
+[Equally weighted portfolio]{.image}
+
+[Value weighted portfolio]{.image}
+
+In Figure [\[fig:SL\]](#fig:SL){reference-type="ref" reference="fig:SL"} the average return of the SL portfolio is -0.0003 for the EW and -0.0026 for the VW. Hence, compared to Homework 1 Question 9 the short-long portfolio here is better (-0.0003 \> -0.02 for EW and -0.0026 \> -0.07 for VW) as the returns increased and are no longer negative but almost zero.
+
+# Question 5 {#sec:q5}
+
+**Take the minimum variance portfolio from Question 4 of Homework 1 and calculate its carbon intensity. Reallocate its composition to reduce carbon intensity by 50% (see optimization problem below). Comment on the changes it took to improve the carbon intensity (e.g. how many and which firms (firm names) had to be removed in the most recent year of your sample to achieve these objectives).**
+
+Similar to Question 3, the decarbonized portfolio is used. Minimum variance portfolios for each month are built, as in Question 4 of Homework 1. This time a new random sample of 50 firms (new50) is used. Hence, the code is re-run once (without modification), to have a comparable baseline. Next, the additional constraint is added. The aim is to have a weighted average carbon intensity (WACI) that is less than half that of the baseline. The reason for doing this results from the assumption that investors do not desire to invest in highly polluting companies [@bib:Jondeau]. In other words, the goal is to reduce the carbon intensity of the minimum variance portfolio by at least half each month. The constraint is the following:
+
+$$\sum_{i}(Weight_{i,m} \cdot ScopeIntensity_{i,m}) \leq 0.5\cdot WACIbaseline_m$$
+
+The portfolios are optimised under both constraints (sum of weights equals 1 and lower weighted average carbon intensity) to get the new weights of the decarbonized portfolios, denoted \"weights2\" in the code. The optimisation problem looks as follow:
+
+$$\begin{aligned}
+\underset{\alpha}{min}  \hspace{0.7cm}  &\alpha'\Sigma \alpha \\
+s.t. \hspace{0.7cm}                     &\alpha'e = 1 \\
+                                        &\alpha'CI \leq 0.5 \cdot (\alpha'CI)_{Q4-HW1}\end{aligned}$$
+
+Where $\alpha$ are the weights, $\Sigma$ is the covariance matrix, e is a vector of ones and CI are the carbon intensities (which this report calls Scope intensities or Scopes). The formula returns a weights vector such that the resulting portfolio has the minimum possible variance, thus the minimum variance portfolio can be constructed and its summary statistics analysed.
+
+This is all based on fundamental-based risk management in which the exposure of the portfolio to carbon intensity, an idiosyncratic carbon risk, is restricted. In this exercise, we take a portfolio threshold approach, consisting of portfolio optimisation under an additional constraint of an upper bound for the WACI of the whole portfolio. An alternative method could have been to impose an individual threshold, such that we eliminate companies from our portfolio ($\alpha$ = 0) which
+have a carbon intensity above a pre-defined threshold [@bib:Jondeau].
+
+[Without an additional constraint]{.image}
+
+[With an additional constraint]{.image}
+
+As it can be seen in Figure [\[fig:SumStatQ5\]](#fig:SumStatQ5){reference-type="ref" reference="fig:SumStatQ5"}, the return of the decarbonized portfolio is
+higher (0.150 \> 0.137), so is the minimum (-0.89 \> -0.097) and maximum returns (0.119 \> 0.111). As volatility and return are positively correlated, we observe an slight increase in the volatility also (0.156 \> 0.154). Furthermore, the Sharpe ratio grew (0.885 \> 0.809), which means that the investor should choose the decarbonized portfolio. Finally, the carbon intensity halved (93.769 = 187.539 / 2). This is great news as this was the constraint of the decarbonized portfolio and
+hereby it can be checked that the constraint was respected.
+
+Upon carrying out this analysis, we wanted to make sure that we only considered firms that had available Scopes 1,2 & 3 over the time period studied. Otherwise, it would have be easy to wrongly re-allocate weights, such that firms with no data take up a larger portion of the portfolio, since they would not influence the WACI of the portfolio. To avoid this mistake, it is crucial to filter the data pre-optimisation. We thus chose to focus on the years that had the most available scope data, to have a large basket of firms for selecting our 50 random firms (new50). Hence, we took data over 4 years from January 2016 to December 2019, and then dropped remaining firms which had NaNs in their scopes. Among the remaining firms, we then randomly selected 50. Disclaimer: It is still possible to have weights that are NaN in our portfolio, this is because upon looking at each month individually (in our loop), we drop firms without return data, so as not to include them in the portfolio. If these happen to be a part of our set of 50 random firms, then there will be no weight associated with these particular firms.
+
+As a result of the new optimisation, it is interesting to visualise how the weights of the different companies changes within the portfolios (Figure [3](#fig:diffWeights){reference-type="ref" reference="fig:diffWeights"}). To do so, the average difference over all months between the weight of each firm given the additional constraint and the weight of the firm without the additional constraint are plotted. In this way, firms with a positive difference, represented in the bar chart by the bars above zero, are those in which there was an increased investment, post-introduction of the new constraint. Whereas the negative bars indicate that firms lost weight in the portfolio with the additional constraint. Hence, it can be assumed, a priori, that the companies with positive bars are greener, because we increased our investment in them to satisfy the decarbonisation constraint, whereas the firms with negative bars wou
+
+[Differences of the allocated weights per firm. $\alpha_{HW3} - \alpha_{HW1}$]{.image}
+
+In Figure [3](#fig:diffWeights){reference-type="ref" reference="fig:diffWeights"}, the difference in weights between Homework 3 and 1 can be observed. If we look at the minimum variance portfolio of December 2019, we see that only two firms have been completely removed from the portfolio. The first one is called Umicore. It is a global material technology and recycling group [@bib:umicore]. Umicore's Scope 3 is the biggest, likely due to the use of the recycled materials and the supply chain before the material got recycled. The second company is BASF, a chemical firm [@bib:BASF]. Its Scope 1 is high but Scope 3 is even higher. Once again this can be explained by their business as chemical production itself emits a lot of emissions and so does its supply chain all the way from mining to recycling.
+
+::: {#tab:deleted}
+  **Company**           **Deleted**   **Products/Services**                      **Scope(s)**
+  --------------------- ------------- ------------------------------------------ --------------
+  AMIAD WATER SYSTEMS   36            Filtration Technology                      3
+  BASF                  38            Chemical company                           (1), 3
+  DNO                   29            Oil and gas operator                       1, (3)
+  MASSIMO ZANETTI       48            Coffee production                          3
+  STELLANTIS            26            Automotive manufacturing corporation       3
+  SYSTEMAIR             34            Manufacturer of ventilation equipment      3
+  UMICORE               32            Materials technology and recycling group   3
+  ZIGNAGO VETRO         48            Glass packaging industry                   1, (2)
+
+  : Most deleted companies
+:::
+
+Table [1](#tab:deleted){reference-type="ref" reference="tab:deleted"} [@bib:umicore], [@bib:BASF], [@bib:systemair], [@bib:stellantis], [@bib:dno], [@bib:zignago_vetro], [@bib:amiad_water_systems], [@bib:massimo] summarises the companies that were not considered in the new portfolio more than half of the time (48 months /2 = 24). \"Deleted\" means that the company was not part of the new portfolio \"Nb deleted\" times. The \"Products/Services\" explain what they do and
+\"Scope(S)\" mentions the highest Scope, and if another one is high as well it is written in brackets. The two companies not considered in the most recent year (mentioned above) are also on this list, as well as the company MASSIMO ZANETTI that is talked about in the following paragraph.
+
+To push the analysis of Figure [3](#fig:diffWeights){reference-type="ref" reference="fig:diffWeights"} further, the company with the biggest (CREALOGIX HOLDING) and smallest (MASSIMO ZANETTI) difference in weight allocation are analysed in more depth.
+
+[MASSIMO ZANETTI]{.image}
+
+[CREALOGIX HOLDING]{.image}
+
+The two graphs in Figure
+[5](#fig:PlotCREALOGIX_HOLDING){reference-type="ref" reference="fig:PlotCREALOGIX_HOLDING"} explain why more weight was allocated to \"CREALOGIX HOLDING\" than to \"MASSIMO ZANETTI\". Indeed, the emissions are much higher for the company \"MASSIMO ZANETTI\". It is a coffee production company and its Scope 3 has the highest
+emissions[@bib:massimo]. This result is consistent with reality because coffee is one of the products that emit the most CO2 during its entire supply chain. This can be observed in Figure [6](#fig:cafe){reference-type="ref" reference="fig:cafe"}, where it can be seen that the biggest part of the emissions is related to the
+cultivation of the coffee beans, which is included in Scope 3 of the company.
+
+[Food greenhouse gas emissions across the food supply chain]{.image}
+
+The company \"CREALOGIX HOLDING\" has a very low Scope 1 and 2. This is a result of the fact that it is a holding company. This means that it has few direct emissions. Moreover, it is a holding company that mainly supports banks, thus leading to a low Scope 3[@bib:crealogix].
+
+---
+nocite: "[@*]"
+references:
+- author:
+  - family: Jondeau
+    given: Eric
+  id: "bib:Jondeau"
+  issued: 2022
+  title: Sustainable and entrepreunarial finance
+  type: article-journal
+- accessed: 2022-04-29
+  author:
+  - family: Chen
+    given: James
+  id: "bib:csa"
+  issued: 2020
+  title: Cross-sectional analysis
+  type: webpage
+  url: "https://www.investopedia.com/terms/c/cross_sectional_analysis.asp"
+- author:
+  - family: COUNT
+    given: WE
+  id: "bib:scope_france"
+  title: Est-ce obligatoire de réaliser son bilan carbone (BEGES)?
+  type: webpage
+  url: "https://www.wecount.io/post/est-ce-obligatoire-de-réaliser-son-bilan-carbone-beges"
+- author:
+  - family: NewCo
+  id: "bib:holding"
+  title: "Qu'est-ce qu'une holding ?"
+  type: webpage
+  url: "https://newco.ch/fr/blog/qu-est-ce-qu-une-holding\\--52"
+- accessed: 2022-05-04
+  author:
+  - family: Biffa
+  id: "bib:Biffa"
+  issued: 2022
+  title: Biffa
+  type: webpage
+  url: "https://www.biffa.co.uk/"
+- accessed: 2022-05-04
+  author:
+  - family: Engie
+  id: "bib:international_power"
+  issued: 2011
+  title: International power plc and GDF SUEZ successfully create a
+    global leader in independent power generation
+  type: webpage
+  url: "https://www.engieresources.com/international-power-plc-and-gdf-suez-successfully-create-a-global-leader-in-independent-power-generation"
+- author:
+  - family: Bolton
+    given: Patrick
+  - family: Kacperczyk
+    given: Marcin
+  container-title: Journal of Financial Economics
+  id: "bib:return-emission"
+  issue: 142
+  issued: 2021
+  page: 517-549
+  publisher: ELSEVIER
+  title: Do investors care about carbon risk?
+  type: article-journal
+- accessed: 2022-05-05
+  id: "bib:eea2014"
+  issued: 2016
+  title: EU greenhouse gas emissions at lowest level since 1990
+  type: webpage
+  url: "https://www.eea.europa.eu/highlights/eu-greenhouse-gas-emissions-at\\#:\\~:text=European%20Union%20(EU)%20greenhouse%20gas,European%20Environment%20Agency%20(EEA)."
+- accessed: 2022-05-09
+  author:
+  - family: Hayes
+    given: Adan
+  id: "bib:long"
+  issued: 2021
+  title: Long position
+  type: webpage
+  url: "https://www.investopedia.com/terms/l/long.asp"
+- accessed: 2022-05-10
+  author:
+  - family: Commission
+    given: European
+  id: "bib:Kyoto2"
+  title: Kyoto 2nd commitment period (2013--20)
+  type: webpage
+  url: "https://ec.europa.eu/clima/eu-action/climate-strategies-targets/progress-made-cutting-emissions/kyoto-2nd-commitment-period-2013-20_en"
+- accessed: 2022-05-10
+  author:
+  - family: Commission
+    given: European
+  id: "bib:Kyoto1"
+  title: Kyoto 1st commitment period (2008--12)
+  type: webpage
+  url: "https://ec.europa.eu/clima/eu-action/climate-strategies-targets/progress-made-cutting-emissions/kyoto-1st-commitment-period-2008-12_en"
+- accessed: 2022-05-10
+  author:
+  - family: Commission
+    given: European
+  id: "bib:EUClimateLaw"
+  title: European climate law
+  type: webpage
+  url: "https://ec.europa.eu/clima/eu-action/european-green-deal/european-climate-law_en"
+- accessed: 2022-05-10
+  id: "bib:Wiki_Biffa"
+  title: Biffa
+  type: webpage
+  url: "https://en.wikipedia.org/wiki/Biffa"
+- accessed: 2022-05-11
+  id: "bib:umicore"
+  title: About umicore
+  type: webpage
+  url: "https://www.umicore.com/en/about/"
+- accessed: 2022-05-11
+  id: "bib:BASF"
+  title: BASF
+  type: webpage
+  url: "https://en.wikipedia.org/wiki/BASF"
+- accessed: 2022-05-11
+  author:
+  - family: Wikipédia
+  id: "bib:systemair"
+  issued: 2022
+  title: Systemair
+  type: webpage
+  url: "https://fr.wikipedia.org/wiki/Systemair"
+- accessed: 2022-05-11
+  author:
+  - family: Wikipédia
+  id: "bib:stellantis"
+  issued: 2022
+  title: Stellantis
+  type: webpage
+  url: "https://fr.wikipedia.org/wiki/Stellantis"
+- accessed: 2022-05-11
+  id: "bib:dno"
+  title: DNO
+  type: webpage
+  url: "https://www.dno.no"
+- accessed: 2022-05-11
+  id: "bib:zignago_vetro"
+  title: ZIGNAGO VETRO
+  type: webpage
+  url: "https://zignagovetro.com/fr/"
+- accessed: 2022-05-11
+  id: "bib:amiad_water_systems"
+  title: Amiad water systems
+  type: webpage
+  url: "https://fr.amiad.com"
+- accessed: 2022-05-11
+  id: "bib:rea"
+  title: R.e.a holdings plc
+  type: webpage
+  url: "https://www.rea.co.uk/websites/reaholdingsplc/English/1/home.html"
+- accessed: 2022-05-11
+  author:
+  - family: Wikipédia
+  id: "bib:evn"
+  issued: 2019
+  title: EVN (entreprise)
+  type: webpage
+  url: "https://fr.wikipedia.org/wiki/EVN\\_(entreprise)"
+- accessed: 2022-05-11
+  id: "bib:tubacex"
+  title: TUBACEX GROUP
+  type: webpage
+  url: "https://www.tubacex.com"
+- accessed: 2022-05-11
+  id: "bib:tubacex2"
+  title: TUBACEX GROUP, environment
+  type: webpage
+  url: "https://www.tubacex.com/tubacex-group/prevention-environment-quality/environment/"
+- accessed: 2022-05-10
+  id: "bib:crealogix"
+  title: CREALOGIX
+  type: webpage
+  url: "https://crealogix.com/en"
+- accessed: 2022-05-10
+  id: "bib:massimo"
+  title: Massimo zanetti
+  type: webpage
+  url: "https://www.mzb-group.com"
+- accessed: 2020-10-17
+  author:
+  - family: Witlox
+    given: Kasja
+  - family: Keller
+    given: Regula
+  - family: Jungbluth
+    given: Niels
+  id: "bib:esu2015poster"
+  issued: 2015
+  title: A LCA case study of hand washing with liquid and bar soap
+  type: webpage
+  url: "http://esu-services.ch/fileadmin/download/witlox-2015-LCA-soap-poster.pdf"
+- author:
+  - family: Koehler
+    given: Annette
+  - family: Wildbolz
+    given: Caroline
+  container-title: Environmental science & technology
+  id: "bib:koehler2009comparing"
+  issue: 22
+  issued: 2009
+  page: 8643-8651
+  publisher: ACS Publications
+  title: "Comparing the environmental footprints of home-care and
+    personal-hygiene products: The relevance of different life-cycle
+    phases"
+  title-short: Comparing the environmental footprints of home-care and
+    personal-hygiene products
+  type: article-journal
+  volume: 43
+- author:
+  - family: Feld
+    given: Brad
+  - family: Mendelson
+    given: Jason
+  id: "bib:ventureDeals"
+  issued: 2019
+  publisher: John Wiley & Sons Inc
+  publisher-place: New York, United States
+  title: "Venture deals : Be smarter than your lawyer and venture
+    capitalist"
+  title-short: Venture deals
+  type: book
+---

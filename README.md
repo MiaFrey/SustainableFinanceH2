@@ -82,4 +82,132 @@ The results obtained are quite similar to before (Figure [\[fig:histo\]](#fig:hi
 
 [Linear and logarithmic histogram of the year 2019 Scopes (linear and logarithmic]{.image}
 
+## Exercise 2
+- **In Question 5 of Homework 1, you calculated efficient portfolios with various target returns. Take these portfolios, calculate and report the weighted-average carbon intensity of these portfolios (you can take the average carbon intensity for each firm over time). Comment on the carbon intensity of the portfolios. Which firms (e.g. top 10; report firm names along with ISIN) are driving the carbon intensity up? Plot on the volatility-carbon intensity space the various portfolios (i.e., make a plot similar to the efficient frontier except that carbon intensity replaces the return on the y-axis).**
 
+One thing to note for this exercise and the entire Homework 2 is that the list of 50 companies selected was changed between the first and third assignments,as the list of random firms was not saved in the first homework.
+
+This is why the code of Homework 1 was rerun for the new 50 firms, to create a benchmark for comparison, before proceeding with the new part of the question. A return of 16% can still not be reached, thus, the same technique as in Homework 1 is used to counter the problem: a return of 2% is targeted and the increment step was then modified to produce eight portfolios with reachable returns.
+
+The efficient frontier representing the efficient portfolios and the attainable returns that can be targeted with these 50 randomly selected firms is the following.
+
+[Efficient frontier of the 50 selected firms]{.image}
+
+The weighted-average carbon intensity (WACI) is a measure of the portfolio's exposure to polluting firms. The higher a portfolio's investment in carbon-intensive firms, the higher its weighted-average carbon intensity is. The measurement's unit is in tons of $CO_2$ equivalents per million dollars of revenue $[tCO_2eq/\$mln]$. The following formula is used to calculate the WACI of a portfolio in year $t$ [@bib:Jondeau]:
+
+$$WACI = \Sigma_{i=1}^{N_t} w_{i,t} \cdot \frac{E_{i,t}}{Rev_{i,t}} = \Sigma_{i=1}^{N_t} w_{i,t} \cdot CI_{i,t}$$
+
+Where $N_t$ is the number of firms in the portfolio in period $t$, $w_{i,t}$ is the weight of the firm $i$ in the portfolio in period t, $E_{i,t}$ is the emissions of the firm $i$ in period t, $Rev_{i,t}$ its revenue in period t and $CI_{i,t}$ its carbon intensity in period t.
+
+More precisely in the case of this exercise, the calculation of the weighted average carbon intensity is done with the mean carbon intensity of each firm over time multiplied by the corresponding weights of the firms in the portfolio. The summary statistics of the results are reported below. One can observe the usual positive correlation between return and volatility, this being that the higher the return, the higher the volatility. The maximal Sharpe ratio observable in the table is
+equal to 0.093 and corresponds to a portfolio WACI that is almost half the one of a portfolio maximising return.
+
+[Summary statistics of the different portfolios created]{.image}
+
+One can see also in Figure [2](#fig:Q2_sumStats){reference-type="ref" reference="fig:Q2_sumStats"} and [3](#fig:CI(Vol)){reference-type="ref" reference="fig:CI(Vol)"} that aiming for a higher return increases the volatility as well as the carbon intensity of the portfolio. Bolton and Kacperczyk (2021) found that carbon emissions significantly affect stock returns and this is in line with what is found in the data of this report [@bib:return-emission]. The more one increases the targeted return the higher the carbon intensity, thus the higher the negative impact of the portfolio on the environment.
+
+[WACI of a portfolio in function of its variability]{.image}
+
+When looking at the top 10 emitting firms within the 50 randomly selected (Figure [4](#fig:top10){reference-type="ref" reference="fig:top10"}), one can see that the first one is more or less equal to the sum of the second to fifth ones and that together they represent around two-thirds of the emissions of the 10 worst firms. Indeed, the most polluting company has a carbon intensity of around 5000 tCO2e/mln \$, and the following companies have results of around 1000 tCO2e/mln \$.
+
+[Top 10 carbon intensive firms within the 50 randomly selected sample]{.image}
+
+In this report, the focus lies with European companies. Hence, to be able to compare European companies with those of the rest of the world the following summary table is presented. It summarises the emissions of the 25 most highly emitting companies in the world (considering the sum of Scopes 1, 2, and 3):
+
+::: {.adjustbox} width=,totalheight=,keepaspectratio
+
+::: {#tab:Elo'sTable}
+   N°    Emissions                   Name                     Region         Continent
+  ---- ------------- ------------------------------------ --------------- ---------------
+   1    18374,02563         CHINA RESOURCES POWER            Hong Kong         Asia
+   2    15282,23622              DGI.PWG.'H'                   China           Asia
+   3    14270,08351                  NTPC                      India           Asia
+   4    13736,28866            CHIN.PWR.INTDVT.              Hong Kong         Asia
+   5    13388,66862    HUADIAN POWER INTERNATIONAL 'H'         China           Asia
+   6    12624,54763               PXP ENERGY                Philipines         Asia
+   7    12499,05943    HUANENG POWER INTERNATIONAL 'H'         China           Asia
+   8    12259,69946       GUANGDONG ELEC.PWR.DEV.'B'           China           Asia
+   9    12157,25576               NLC INDIA                    India           Asia
+   10   12054,80082      TONGFANG KONTAFARMA HOLDINGS        Hong Kong         Asia
+   11   10351,66473         ELECTRICITY GENERATING           Thailand          Asia
+   12   10169,95282               TRANSALTA                   Canada       North America
+   13   9457,156157            REFEX INDUSTRIES                India           Asia
+   14   8739,007641           NATIONAL ALUMINIUM               India           Asia
+   15   8277,845097     DYNEGY DEAD - DELIST.09/04/18      United States   North America
+   16   8238,296685             RELIANCE POWER                 India           Asia
+   17   8192,131009            SIAM CITY CEMENT              Thailand          Asia
+   18   7764,15405                 YUNIPRO                    Russia          Europe
+   19   7518,480417              ADANI POWER                   India           Asia
+   20   7394,042326       JSW ISPAT SPECIAL PRODUCTS           India           Asia
+   21   7177,030666            SHANXI XISHAN C             ELY.PWR. 'A'        6344
+   22   7175,503165       SHERRITT INTL.RESTRCTD VTG          Canada       North America
+   23   6776,780786                 EVERGY                 United States   North America
+   24   6776,671493   SUEZ CEMENT DEAD - DELIST.11/02/21       Egypt          Africa
+   25   6640,611099          ICT.TUNGGAL PRAKARSA            Indonesia         Asia
+
+  : Rest of the world top 25 emitting firms
+:::
+:::
+
+First of all, it can be observed that the most polluting companies in the world emit much more than the ones in Europe. Indeed, the emission of the 25 highest firms is around 15'000 tCO2e/mln \$ which is three times higher than the European firm emitting the most and around 15 times higher than the other highest emitters of Europe. Moreover, these companies are often in Asia. To better understand the results the following table summarises the data by continent:
+
+::: {#tab:EmPerComp}
+     Continent      Emissions     Share
+  --------------- ------------- ---------
+       Asia        210355,0865   81,76 %
+   North America   32400,08187   12,59 %
+      Europe       7764,15405    3,02 %
+      Africa       6776,671493   2,63 %
+
+  : Emission per continent
+:::
+
+Even if the sample of the top emitters is not representative of the average, it can still be noted that Asia produces about 81% of the emissions produced by the 25 most polluting companies. In second place is the USA with about 13%. These results are in agreement with the following table depicting that the largest emitters in 2017 were Asia followed by the USA and Europe [@bib:Jondeau]:
+
+[Emissions by continent in 2017]{.image}
+
+Currently, it is the firms located in Asia, a continent in full expansion and growth, that emit the most. In conclusion, Europe is currently not the largest emitter in the world. However, historically speaking Europe is the biggest polluter with about 33% of the global cumulative emissions. These results are consistent with the demographics of each continent. Indeed, Europe has already experienced its growth phase and is now stagnating or even declining, while Asia is still growing in terms of population and economically and is therefore evolving rapidly [@bib:Jondeau].
+
+Next comes the analysis of the three highest emitters in Europe, according to (Figure [5](#fig:continent){reference-type="ref" reference="fig:continent"}, which drive the carbon intensity of the portfolios up.
+
+## Firm 1 : R.E.A Holding
+
+The biggest polluter is a holding company. This is a firm that takes financial stakes in other companies and therefore participates in their direction and management [@bib:holding]. According to the theory, it is therefore expected that Scope 3 of this company will be high, as it is linked to the emissions released by the companies that the holding company finances. There are certain anomalies in the scope data that we were unfortunately not able to find explanations for during our research.
+
+REA invests mainly in the cultivation of palm oil, a very polluting sector[@bib:rea]. That is why it is not surprising that this company is at the top of the list.
+
+[Scope 1]{.image}
+
+[Scope 2]{.image}
+
+[Scope 3]{.image}
+
+## Firm 2: EVN
+
+EVN is an Austrian company that produces and distributes energy. In the following three graphs, one can see the different carbon intensities for each year[@bib:evn].
+
+The first thing to note is that the values for the years 2007 through 2012 are missing. This can have an impact on the average. Indeed, when we have fewer observations, the presence of extreme cases has a bigger influence on the average. For example, in 2005 the value for Scope 3 is much higher than the others.
+
+Secondly, one can observe that Scope 1 has the highest emissions, which is consistent with the theory. Indeed, EVN is an energy production company whose main emission is linked to the energy they produce.
+
+[Scope 1]{.image}
+
+[Scope 2]{.image}
+
+[Scope 3]{.image}
+
+## Firm 3: Tubacex
+
+Tubacex is a company producing pipes and their market is mainly constituted by Oil & Gas, Powergen, and Petrochemical industry[@bib:tubacex].
+
+First of all, the results are only based on four years, which could slightly distort the average.
+
+Scope 3 is responsible for its high overall score. This is reasonable as Scope 3 takes into account all down- and upstream emissions. Thus, the sale of their pipes mainly for purposes related to oil and gas explains their high Scope 3 intensity. We observe that something happens in 2018 which greatly increases scopes 1 and 2, however,we remain unsure of the reasons that cause this phenomena.
+
+Their website leads us to believe that they are trying to become more sustainable, notably by \"advanced materials leading to significantly improved energy efficiency; and reduction in CO2 emissions, as a result\"[@bib:tubacex2]. We note here that by implementing these various measures, they can decrease Scope 1 and 2 but not 3 which is responsible for their high result. Nevertheless, this is better than nothing but it means that it would not have a significant impact on their total carbon intensity.
+
+[Scope 1]{.image}
+
+[Scope 2]{.image}
+
+[Scope 3]{.image}

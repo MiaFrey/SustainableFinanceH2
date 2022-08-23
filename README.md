@@ -430,52 +430,50 @@ The company \"CREALOGIX HOLDING\" has a very low Scope 1 and 2. This is a result
 
 # Sources
 
-[[1]](#1)
-
 <a id="1">[1]</a> James Chen. Cross-Sectional Analysis. 2020. url: https://www.investopedia.com/terms/c/cross_sectional_analysis.asp (visited on 04/29/2022).
 
-<a id="2">[1]</a> Eric Jondeau. “Sustainable and Entrepreunarial Finance”. In: (2022).
+<a id="2">[2]</a> Eric Jondeau. “Sustainable and Entrepreunarial Finance”. In: (2022).
 
-<a id="3">[1]</a> WE COUNT. Est-ce obligatoire de réaliser son bilan carbone (BEGES)? url: https://www.wecount.io/post/est-ce-obligatoire-de-r%C3%A9aliser-son-bilan-carbone-beges.
+<a id="3">[3]</a> WE COUNT. Est-ce obligatoire de réaliser son bilan carbone (BEGES)? url: https://www.wecount.io/post/est-ce-obligatoire-de-r%C3%A9aliser-son-bilan-carbone-beges.
 
-<a id="4">[1]</a> Biffa. url: https://en.wikipedia.org/wiki/Biffa (visited on 05/10/2022).
+<a id="4">[4]</a> Biffa. url: https://en.wikipedia.org/wiki/Biffa (visited on 05/10/2022).
 
-<a id="5">[1]</a> Engie. International Power plc and GDF SUEZ Successfully Create a Global Leader in Independent Power Generation. 2011. url: https://www.engieresources.com/international-power-plc-and-gdf-suez-successfully-create-a-global-leader-in-independent-power-generation (visited on 05/04/2022).
+<a id="5">[5]</a> Engie. International Power plc and GDF SUEZ Successfully Create a Global Leader in Independent Power Generation. 2011. url: https://www.engieresources.com/international-power-plc-and-gdf-suez-successfully-create-a-global-leader-in-independent-power-generation (visited on 05/04/2022).
 
-<a id="6">[1]</a> EU greenhouse gas emissions at lowest level since 1990. 2016. url: https://www.eea.europa.eu/highlights/eu-greenhouse-gas-emissions-at#:~:text=European%20Union%20(EU)%20greenhouse%20gas,European%20Environment%20Agency%20(EEA). (visited on 05/05/2022).
+<a id="6">[6]</a> EU greenhouse gas emissions at lowest level since 1990. 2016. url: https://www.eea.europa.eu/highlights/eu-greenhouse-gas-emissions-at#:~:text=European%20Union%20(EU)%20greenhouse%20gas,European%20Environment%20Agency%20(EEA). (visited on 05/05/2022).
 
-<a id="7">[1]</a> European Commission. Kyoto 1st commitment period (2008–12). url: https://ec.europa.eu/clima/eu-action/climate-strategies-targets/progress-made-cutting-emissions/kyoto-1st-commitment-period-2008-12_en (visited on 05/10/2022).
+<a id="7">[7]</a> European Commission. Kyoto 1st commitment period (2008–12). url: https://ec.europa.eu/clima/eu-action/climate-strategies-targets/progress-made-cutting-emissions/kyoto-1st-commitment-period-2008-12_en (visited on 05/10/2022).
 
-<a id="8">[1]</a> European Commission. Kyoto 2nd commitment period (2013–20). url: https://ec.europa.eu/clima/eu-action/climate-strategies-targets/progress-made-cutting-emissions/kyoto-2nd-commitment-period-2013-20_en (visited on 05/10/2022).
+<a id="8">[8]</a> European Commission. Kyoto 2nd commitment period (2013–20). url: https://ec.europa.eu/clima/eu-action/climate-strategies-targets/progress-made-cutting-emissions/kyoto-2nd-commitment-period-2013-20_en (visited on 05/10/2022).
 
-<a id="9">[1]</a> European Commission. European Climate Law. url: https://ec.europa.eu/clima/eu-action/european-green-deal/european-climate-law_en (visited on 05/10/2022).
+<a id="9">[9]</a> European Commission. European Climate Law. url: https://ec.europa.eu/clima/eu-action/european-green-deal/european-climate-law_en (visited on 05/10/2022).
 
-<a id="10">[1]</a> Patrick Bolton and Marcin Kacperczyk. “Do investors care about carbon risk?” In: Journal of Financial Economics 142 (2021), pp. 517–549.
+<a id="10">[10]</a> Patrick Bolton and Marcin Kacperczyk. “Do investors care about carbon risk?” In: Journal of Financial Economics 142 (2021), pp. 517–549.
 
-<a id="11">[1]</a> NewCo. Qu’est-ce qu’une holding ? url: https://newco.ch/fr/blog/qu-est-ce-qu-une-holding--52.
+<a id="11">[11]</a> NewCo. Qu’est-ce qu’une holding ? url: https://newco.ch/fr/blog/qu-est-ce-qu-une-holding--52.
 
-<a id="12">[1]</a> R.E.A Holdings plc. url: https://www.rea.co.uk/websites/reaholdingsplc/English/1/home.html (visited on 05/11/2022).
+<a id="12">[12]</a> R.E.A Holdings plc. url: https://www.rea.co.uk/websites/reaholdingsplc/English/1/home.html (visited on 05/11/2022).
 
-<a id="13">[1]</a> Wikipédia. EVN (entreprise). 2019. url: https://fr.wikipedia.org/wiki/EVN_(entreprise) (visited on 05/11/2022).
+<a id="13">[13]</a> Wikipédia. EVN (entreprise). 2019. url: https://fr.wikipedia.org/wiki/EVN_(entreprise) (visited on 05/11/2022).
 
-<a id="14">[1]</a> TUBACEX GROUP. url: https://www.tubacex.com (visited on 05/11/2022).
+<a id="14">[14]</a> TUBACEX GROUP. url: https://www.tubacex.com (visited on 05/11/2022).
 
-<a id="15">[1]</a> TUBACEX GROUP, Environment. url: https://www.tubacex.com/tubacex-group/prevention-environment-quality/environment/ (visited on 05/11/2022).
+<a id="15">[15]</a> TUBACEX GROUP, Environment. url: https://www.tubacex.com/tubacex-group/prevention-environment-quality/environment/ (visited on 05/11/2022).
 
-<a id="16">[1]</a> About umicore. url: https://www.umicore.com/en/about/ (visited on 05/11/2022).
+<a id="16">[16]</a> About umicore. url: https://www.umicore.com/en/about/ (visited on 05/11/2022).
 
-<a id="17">[1]</a> BASF. url: https://en.wikipedia.org/wiki/BASF (visited on 05/11/2022).
+<a id="17">[17]</a> BASF. url: https://en.wikipedia.org/wiki/BASF (visited on 05/11/2022).
 
-<a id="18">[1]</a> Wikipédia. Systemair. 2022. url: https://fr.wikipedia.org/wiki/Systemair (visited on 05/11/2022).
+<a id="18">[18]</a> Wikipédia. Systemair. 2022. url: https://fr.wikipedia.org/wiki/Systemair (visited on 05/11/2022).
 
-<a id="19">[1]</a> Wikipédia. Stellantis. 2022. url: https://fr.wikipedia.org/wiki/Stellantis (visited on 05/11/2022).
+<a id="19">[19]</a> Wikipédia. Stellantis. 2022. url: https://fr.wikipedia.org/wiki/Stellantis (visited on 05/11/2022).
 
-<a id="20">[1]</a> DNO. url: https://www.dno.no (visited on 05/11/2022).
+<a id="20">[20]</a> DNO. url: https://www.dno.no (visited on 05/11/2022).
 
-<a id="21">[1]</a> ZIGNAGO VETRO. url: https://zignagovetro.com/fr/ (visited on 05/11/2022).
+<a id="21">[21]</a> ZIGNAGO VETRO. url: https://zignagovetro.com/fr/ (visited on 05/11/2022).
 
-<a id="22">[1]</a> Amiad Water Systems. url: https://fr.amiad.com (visited on 05/11/2022).
+<a id="22">[22]</a> Amiad Water Systems. url: https://fr.amiad.com (visited on 05/11/2022).
 
-<a id="23">[1]</a> Massimo Zanetti. url: https://www.mzb-group.com (visited on 05/10/2022).
+<a id="23">[23]</a> Massimo Zanetti. url: https://www.mzb-group.com (visited on 05/10/2022).
 
-<a id="24">[1]</a> CREALOGIX. url: https://crealogix.com/en (visited on 05/10/2022).
+<a id="24">[23]</a> CREALOGIX. url: https://crealogix.com/en (visited on 05/10/2022).

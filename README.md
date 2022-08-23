@@ -11,18 +11,18 @@ Our Group was asked to look at **European firms with available scope 1 to 3 emis
 ## Question 1
 - **Report summary statistics (mean, median, min, max, standard deviation) on the cross-sectional distribution of the carbon intensity. Draw the histogram of the cross-sectional distribution of the variable of interest and comment on the summary statistics and the histogram.**
 
-Our report focuses on European firms with available carbon intensity data for Scopes 1, 2 and 3. A cross-sectional analysis aims to have an industry-wide lens of European firms to identify companies with a particular strength or weakness. It allows us to understand the \"what\" rather than the \"why\". This means that instead of focusing on the relationships between the different companies to be compared, the investor uses cross-sectional analysis to identify their characteristics [@bib:csa].
+Our report focuses on European firms with available carbon intensity data for Scopes 1, 2 and 3. A cross-sectional analysis aims to have an industry-wide lens of European firms to identify companies with a particular strength or weakness. It allows us to understand the \"what\" rather than the \"why\". This means that instead of focusing on the relationships between the different companies to be compared, the investor uses cross-sectional analysis to identify their characteristics [[1]](#1).
 
-As aforementioned, the variable of interest in this paper is carbon intensity. The latter measures the volume of carbon emissions per million dollars of revenue and is expressed in tonnes of CO2 equivalents per million dollars of revenue (tCO2e/mln$) [@bib:Jondeau]. The carbon intensity of a portfolio per period (CI) is calculated as follows:
+As aforementioned, the variable of interest in this paper is carbon intensity. The latter measures the volume of carbon emissions per million dollars of revenue and is expressed in tonnes of CO2 equivalents per million dollars of revenue (tCO2e/mln$) [[2]](#2). The carbon intensity of a portfolio per period (CI) is calculated as follows:
 
 $$CI_t^{(p)} = \frac{\Sigma_{i=1}^{N_t} \cdot o_{i,t}^{(p)} \cdot E_{i,t}}{\Sigma_{i=1}^{N_t} \cdot o_{i,t}^{(p)} \cdot Rev_{i,t}}
    \hspace{0.2cm}$$
 
-According to the GHG Protocol corporate standard, a firm's emissions are divided into three Scopes. Scope 1 emissions are the GHG emissions generated from burning fossil fuels, as well as production processes that are owned or controlled by the firm. They are the so-called direct emissions. Scope 2 emissions stem from the consumption of purchased electricity, heat, or steam by the firm. They are the first-tier indirect emissions. Finally, Scope 3 emissions are other indirect emissions from the value chain of the reporting firm. They include upstream emissions, such as energy, utilities, materials, chemicals, industrials, and consumer goods. Scope 3 also encompasses downstream Scope 3 emissions of financed emissions and sold products, such as oil and gas, automobiles, technology, apparel, and chemicals [@bib:Jondeau].
+According to the GHG Protocol corporate standard, a firm's emissions are divided into three Scopes. Scope 1 emissions are the GHG emissions generated from burning fossil fuels, as well as production processes that are owned or controlled by the firm. They are the so-called direct emissions. Scope 2 emissions stem from the consumption of purchased electricity, heat, or steam by the firm. They are the first-tier indirect emissions. Finally, Scope 3 emissions are other indirect emissions from the value chain of the reporting firm. They include upstream emissions, such as energy, utilities, materials, chemicals, industrials, and consumer goods. Scope 3 also encompasses downstream Scope 3 emissions of financed emissions and sold products, such as oil and gas, automobiles, technology, apparel, and chemicals [[2]](#2).
 
-It is mandatory for firms to report Scope 1 and 2, which should be included in every portfolio construction [@bib:Jondeau]. In France, for example, companies are obliged to include Scopes 1 and 2 in their annual management report [@bib:scope_france]. Scope 3 on the other hand is optional, hard to measure and monitor, and only of importance for some industries. For instance, banks have a small Scope 1 and 2 but as they provide financing to highly polluting companies, their Scope 3 is significantly high. Thus, it can have a substantial impact on the carbon intensity of the portfolio. However, as this data sheds a negative light on the firm in question, it is often not disclosed and thus only estimated by data providers [@bib:Jondeau], such as Trucost which is used for this report. It aims to provide the data, tools, and insights needed by firms, investors, and decision-makers to enable the transition to a low carbon and resource-efficient economy [@bib:Jondeau].
+It is mandatory for firms to report Scope 1 and 2, which should be included in every portfolio construction [[2]](#2). In France, for example, companies are obliged to include Scopes 1 and 2 in their annual management report [[3]](#3). Scope 3 on the other hand is optional, hard to measure and monitor, and only of importance for some industries. For instance, banks have a small Scope 1 and 2 but as they provide financing to highly polluting companies, their Scope 3 is significantly high. Thus, it can have a substantial impact on the carbon intensity of the portfolio. However, as this data sheds a negative light on the firm in question, it is often not disclosed and thus only estimated by data providers [[2]](#2), such as Trucost which is used for this report. It aims to provide the data, tools, and insights needed by firms, investors, and decision-makers to enable the transition to a low carbon and resource-efficient economy [[2]](#2).
 
-The data of the carbon intensity per firm and Scope was already provided. The original data sets span from 1999 to 2020, however, we extract the data from the years 2005 to 2019 for our analysis as the other years have a notable amount of missing data and are thus less interesting to include. We estimate that 14 years of data is sufficiently representative for this report. Furthermore, we create monthly carbon intensity data by reporting the same carbon intensity for a given year twelve times, such that the annual value appears in each month of that year. Additionally, the carbon intensity, found in the scope intensity data sets, for each company and each year were summed up. (Note here that we use \"Scopes\" for scope intensities, which are the carbon intensities mentioned above) Meaning that we create a new data set, in which a company has a new value each year/month (depending on the data needed), which represents the sum of its three Scopes. (To improve the reading flow, the report will from here on refer to the sum of the Scopes as **Scopes**.) Yet, one must note that the Scopes are interlinked and often prone to double counting as the same emission could be counted up to three times in a portfolio reaching up to 40% of total emissions. Unfortunately, it is impossible to eliminate this problem completely [@bib:Jondeau]. Hence, it is important to keep this information in the back of one's mind when analysing the summary statistics and histograms of the carbon intensity.
+The data of the carbon intensity per firm and Scope was already provided. The original data sets span from 1999 to 2020, however, we extract the data from the years 2005 to 2019 for our analysis as the other years have a notable amount of missing data and are thus less interesting to include. We estimate that 14 years of data is sufficiently representative for this report. Furthermore, we create monthly carbon intensity data by reporting the same carbon intensity for a given year twelve times, such that the annual value appears in each month of that year. Additionally, the carbon intensity, found in the scope intensity data sets, for each company and each year were summed up. (Note here that we use \"Scopes\" for scope intensities, which are the carbon intensities mentioned above) Meaning that we create a new data set, in which a company has a new value each year/month (depending on the data needed), which represents the sum of its three Scopes. (To improve the reading flow, the report will from here on refer to the sum of the Scopes as **Scopes**.) Yet, one must note that the Scopes are interlinked and often prone to double counting as the same emission could be counted up to three times in a portfolio reaching up to 40% of total emissions. Unfortunately, it is impossible to eliminate this problem completely [[2]](#2). Hence, it is important to keep this information in the back of one's mind when analysing the summary statistics and histograms of the carbon intensity.
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/110820736/185908671-7d750c2e-4feb-4a75-bdda-2e62f430e2e2.png" width="600" height="220">
@@ -36,7 +36,7 @@ To begin with, Figure [1a] depicts the mean (over time) of the Scope intensities
 
 Finally, after looking at these two graphs, one could simply say that there are extreme values that influence our average. Indeed, the mean is influenced by outliers while the median is a robust measure in the presence of outliers. For instance, when taking the median of the mean (Figure [1a]) this gives 137.79 tCO2e/mln$ which is much lower than our mean of the mean (338 tCO2e/mln$)). However, we cannot remove the extreme values here because they represent high emitting companies and are not necessarily errors in the data. For the rest of the exercise, the average is used to summarise the statistics as this is commonly done.
 
-We find that the number one polluter is a firm named \"Biffa\", which is a waste management company. In Figure [2a] one can observe their development over three years. In 2008 Severn Trent, which had acquired the company in 1991, transferred it to a consortium formed by 3 entities [@bib:Wiki_Biffa]. This is probably why there the data stops in 2007. Their occupation explains the abnormally high emissions. Furthermore, Scope 1 was the main contributor (with values in the thousands). This is logical because Scope 1 encompasses the emissions from burning fossil fuels and production processes owned or controlled by a firm.
+We find that the number one polluter is a firm named \"Biffa\", which is a waste management company. In Figure [2a] one can observe their development over three years. In 2008 Severn Trent, which had acquired the company in 1991, transferred it to a consortium formed by 3 entities [[4]](#4). This is probably why there the data stops in 2007. Their occupation explains the abnormally high emissions. Furthermore, Scope 1 was the main contributor (with values in the thousands). This is logical because Scope 1 encompasses the emissions from burning fossil fuels and production processes owned or controlled by a firm.
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/110820736/185913271-98297e00-2ab5-4cb5-94b9-9580ecef573a.png" width="600" height="220">
@@ -68,7 +68,7 @@ The last summary statistic we explore is the standard deviation (Figure [4]). It
 Figure 4: Scopes’ standard deviation
 ```
 
-Given the data, Figure [5a] depicts the boxplot obtained in 2019 with a range (y-axis) of 0 to 1,400 tCO2e/mln$. Upon comparing this with Figure [5b] [@bib:Jondeau], we observe that both plots are very similar. This is great as it demonstrates that the data collection and cleaning of this report were done to a good standard and are representative of the European situation. It is interesting to note that the emerging countries have a huge interquartile range, meaning that some really small but also extremely big companies exist. China is a big influencer in the Asian market. Europe however has a relatively smaller interquartile range and is comparable to North America and the Pacific. Yet, the median values of all regions, depicted by the horizontal line within each box, are similar.
+Given the data, Figure [5a] depicts the boxplot obtained in 2019 with a range (y-axis) of 0 to 1,400 tCO2e/mln$. Upon comparing this with Figure [5b] [[2]](#2), we observe that both plots are very similar. This is great as it demonstrates that the data collection and cleaning of this report were done to a good standard and are representative of the European situation. It is interesting to note that the emerging countries have a huge interquartile range, meaning that some really small but also extremely big companies exist. China is a big influencer in the Asian market. Europe however has a relatively smaller interquartile range and is comparable to North America and the Pacific. Yet, the median values of all regions, depicted by the horizontal line within each box, are similar.
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/110820736/185915099-a1e94edc-f6a4-4fbc-8e35-987037b38626.png" width="600" height="220">
@@ -140,7 +140,7 @@ The efficient frontier representing the efficient portfolios and the attainable 
 Figure 10: Efficient frontier of the 50 selected firms
 ```
 
-The weighted-average carbon intensity (WACI) is a measure of the portfolio's exposure to polluting firms. The higher a portfolio's investment in carbon-intensive firms, the higher its weighted-average carbon intensity is. The measurement's unit is in tons of $CO_2$ equivalents per million dollars of revenue $[tCO_2eq/$mln]$. The following formula is used to calculate the WACI of a portfolio in year $t$ [@bib:Jondeau]:
+The weighted-average carbon intensity (WACI) is a measure of the portfolio's exposure to polluting firms. The higher a portfolio's investment in carbon-intensive firms, the higher its weighted-average carbon intensity is. The measurement's unit is in tons of $CO_2$ equivalents per million dollars of revenue $[tCO_2eq/$mln]$. The following formula is used to calculate the WACI of a portfolio in year $t$ [[2]](#2):
 
 $$WACI = \Sigma_{i=1}^{N_t} w_{i,t} \cdot \frac{E_{i,t}}{Rev_{i,t}} = \Sigma_{i=1}^{N_t} w_{i,t} \cdot CI_{i,t}$$
 
@@ -198,7 +198,7 @@ First of all, it can be observed that the most polluting companies in the world 
 Table 4: Emission per continent
 ```
 
-Even if the sample of the top emitters is not representative of the average, it can still be noted that Asia produces about 81% of the emissions produced by the 25 most polluting companies. In second place is the USA with about 13%. These results are in agreement with the following table depicting that the largest emitters in 2017 were Asia followed by the USA and Europe [@bib:Jondeau]:
+Even if the sample of the top emitters is not representative of the average, it can still be noted that Asia produces about 81% of the emissions produced by the 25 most polluting companies. In second place is the USA with about 13%. These results are in agreement with the following table depicting that the largest emitters in 2017 were Asia followed by the USA and Europe [[2]](#2):
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/110820736/185916902-7b45854a-15df-487d-aba2-2e1afd70cbbe.png" width="400" height="280">
@@ -208,7 +208,7 @@ Even if the sample of the top emitters is not representative of the average, it 
 Figure 12: Emissions by continent in 2017
 ```
 
-Currently, it is the firms located in Asia, a continent in full expansion and growth, that emit the most. In conclusion, Europe is currently not the largest emitter in the world. However, historically speaking Europe is the biggest polluter with about 33% of the global cumulative emissions. These results are consistent with the demographics of each continent. Indeed, Europe has already experienced its growth phase and is now stagnating or even declining, while Asia is still growing in terms of population and economically and is therefore evolving rapidly [@bib:Jondeau].
+Currently, it is the firms located in Asia, a continent in full expansion and growth, that emit the most. In conclusion, Europe is currently not the largest emitter in the world. However, historically speaking Europe is the biggest polluter with about 33% of the global cumulative emissions. These results are consistent with the demographics of each continent. Indeed, Europe has already experienced its growth phase and is now stagnating or even declining, while Asia is still growing in terms of population and economically and is therefore evolving rapidly [[2]](#2).
 
 Next comes the analysis of the three highest emitters in Europe, according to (Figure [12]), which drive the carbon intensity of the portfolios up.
 
@@ -264,7 +264,7 @@ Figure 15: Scopes of the firm TUBACEX
 
 - **This question is a follow-up to Question 8 of [Homework 1](https://github.com/MiaFrey/SustainableFinanceH1). First, take the same 50 selected firms. Then, create a minimum variance portfolio with monthly rebalancing with an additional constraint: you exclude the worst firms in terms of most polluting (high carbonintensity) firms. Specifically, exclude the top tercile of the distribution in month t - 1 for the carbon intensity. Report summary statistics on the performance (return, risk, Sharpe ratio) of this portfolio as well as its carbon intensity. How do the performance measures (return, risk, Sharpe ratio) compare with the minimum variance portfolio from Question 4 of [Homework 1](https://github.com/MiaFrey/SustainableFinanceH1).**
 
-This exercise addresses building a decarbonized portfolio, hence applying portfolio optimization including carbon risk. It is based on building a minimum variance portfolio and then adding constraints since it is assumed that an investor does not want to put money into a highly polluting company, meaning a company with a high carbon intensity. Thus, a threshold is fixed to restrict the exposure of the portfolio to the carbon intensity (idiosyncratic carbon risk) [@bib:Jondeau]. The threshold is the top tercile of the distribution in month t-1 for this exercise. Here the exclusion approach is used [@bib:Jondeau].
+This exercise addresses building a decarbonized portfolio, hence applying portfolio optimization including carbon risk. It is based on building a minimum variance portfolio and then adding constraints since it is assumed that an investor does not want to put money into a highly polluting company, meaning a company with a high carbon intensity. Thus, a threshold is fixed to restrict the exposure of the portfolio to the carbon intensity (idiosyncratic carbon risk) [[2]](#2). The threshold is the top tercile of the distribution in month t-1 for this exercise. Here the exclusion approach is used [[2]](#2).
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/110820736/185917518-c7ccf3d9-8d71-42d1-9a7e-c4671e66d0f7.png" width="400" height="280">
@@ -346,7 +346,7 @@ In Figure [19] the average return of the SL portfolio is -0.0003 for the EW and 
 
 **Take the minimum variance portfolio from Question 4 of [Homework 1](https://github.com/MiaFrey/SustainableFinanceH1) and calculate its carbon intensity. Reallocate its composition to reduce carbon intensity by 50% (see optimization problem below). Comment on the changes it took to improve the carbon intensity (e.g. how many and which firms (firm names) had to be removed in the most recent year of your sample to achieve these objectives).**
 
-Similar to Question 3, the decarbonized portfolio is used. Minimum variance portfolios for each month are built, as in Question 4 of H[Homework 1](https://github.com/MiaFrey/SustainableFinanceH1). This time a new random sample of 50 firms (new50) is used. Hence, the code is re-run once (without modification), to have a comparable baseline. Next, the additional constraint is added. The aim is to have a weighted average carbon intensity (WACI) that is less than half that of the baseline. The reason for doing this results from the assumption that investors do not desire to invest in highly polluting companies [@bib:Jondeau]. In other words, the goal is to reduce the carbon intensity of the minimum variance portfolio by at least half each month. The constraint is the following:
+Similar to Question 3, the decarbonized portfolio is used. Minimum variance portfolios for each month are built, as in Question 4 of H[Homework 1](https://github.com/MiaFrey/SustainableFinanceH1). This time a new random sample of 50 firms (new50) is used. Hence, the code is re-run once (without modification), to have a comparable baseline. Next, the additional constraint is added. The aim is to have a weighted average carbon intensity (WACI) that is less than half that of the baseline. The reason for doing this results from the assumption that investors do not desire to invest in highly polluting companies [[2]](#2). In other words, the goal is to reduce the carbon intensity of the minimum variance portfolio by at least half each month. The constraint is the following:
 
 $$\sum_{i}(Weight_{i,m} \cdot ScopeIntensity_{i,m}) \leq 0.5\cdot WACIbaseline_m$$
 
@@ -360,7 +360,7 @@ s.t.                                      (&\alpha'e = 1) \\
 Where $\alpha$ are the weights, $\Sigma$ is the covariance matrix, e is a vector of ones and CI are the carbon intensities (which this report calls Scope intensities or Scopes). The formula returns a weights vector such that the resulting portfolio has the minimum possible variance, thus the minimum variance portfolio can be constructed and its summary statistics analysed.
 
 This is all based on fundamental-based risk management in which the exposure of the portfolio to carbon intensity, an idiosyncratic carbon risk, is restricted. In this exercise, we take a portfolio threshold approach, consisting of portfolio optimisation under an additional constraint of an upper bound for the WACI of the whole portfolio. An alternative method could have been to impose an individual threshold, such that we eliminate companies from our portfolio ($\alpha$ = 0) which
-have a carbon intensity above a pre-defined threshold [@bib:Jondeau].
+have a carbon intensity above a pre-defined threshold [[2]](#2).
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/110820736/185918120-5b2b96d9-0e1b-4208-a783-7ac4604c5cb4.png" width="600" height="220">
@@ -413,7 +413,7 @@ The two graphs in Figure [21] explain why more weight was allocated to \"CREALOG
 
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/185918429-b81ef31a-8542-423b-a6c0-5c58d8f8da71.png" width="400" height="280">
+    <img src="https://user-images.githubusercontent.com/110820736/186095533-b6c01865-6899-4257-a275-2abd4caefaab.png" width="400" height="280">
 </p> 
 
 ```
@@ -430,50 +430,52 @@ The company \"CREALOGIX HOLDING\" has a very low Scope 1 and 2. This is a result
 
 # Sources
 
-[1] James Chen. Cross-Sectional Analysis. 2020. url: https://www.investopedia.com/terms/c/cross_sectional_analysis.asp (visited on 04/29/2022).
+[[1]](#1)
 
-[2] Eric Jondeau. “Sustainable and Entrepreunarial Finance”. In: (2022).
+<a id="1">[1]</a> James Chen. Cross-Sectional Analysis. 2020. url: https://www.investopedia.com/terms/c/cross_sectional_analysis.asp (visited on 04/29/2022).
 
-[3] WE COUNT. Est-ce obligatoire de réaliser son bilan carbone (BEGES)? url: https://www.wecount.io/post/est-ce-obligatoire-de-r%C3%A9aliser-son-bilan-carbone-beges.
+<a id="2">[1]</a> Eric Jondeau. “Sustainable and Entrepreunarial Finance”. In: (2022).
 
-[4] Biffa. url: https://en.wikipedia.org/wiki/Biffa (visited on 05/10/2022).
+<a id="3">[1]</a> WE COUNT. Est-ce obligatoire de réaliser son bilan carbone (BEGES)? url: https://www.wecount.io/post/est-ce-obligatoire-de-r%C3%A9aliser-son-bilan-carbone-beges.
 
-[5] Engie. International Power plc and GDF SUEZ Successfully Create a Global Leader in Independent Power Generation. 2011. url: https://www.engieresources.com/international-power-plc-and-gdf-suez-successfully-create-a-global-leader-in-independent-power-generation (visited on 05/04/2022).
+<a id="4">[1]</a> Biffa. url: https://en.wikipedia.org/wiki/Biffa (visited on 05/10/2022).
 
-[6] EU greenhouse gas emissions at lowest level since 1990. 2016. url: https://www.eea.europa.eu/highlights/eu-greenhouse-gas-emissions-at#:~:text=European%20Union%20(EU)%20greenhouse%20gas,European%20Environment%20Agency%20(EEA). (visited on 05/05/2022).
+<a id="5">[1]</a> Engie. International Power plc and GDF SUEZ Successfully Create a Global Leader in Independent Power Generation. 2011. url: https://www.engieresources.com/international-power-plc-and-gdf-suez-successfully-create-a-global-leader-in-independent-power-generation (visited on 05/04/2022).
 
-[7] European Commission. Kyoto 1st commitment period (2008–12). url: https://ec.europa.eu/clima/eu-action/climate-strategies-targets/progress-made-cutting-emissions/kyoto-1st-commitment-period-2008-12_en (visited on 05/10/2022).
+<a id="6">[1]</a> EU greenhouse gas emissions at lowest level since 1990. 2016. url: https://www.eea.europa.eu/highlights/eu-greenhouse-gas-emissions-at#:~:text=European%20Union%20(EU)%20greenhouse%20gas,European%20Environment%20Agency%20(EEA). (visited on 05/05/2022).
 
-[8] European Commission. Kyoto 2nd commitment period (2013–20). url: https://ec.europa.eu/clima/eu-action/climate-strategies-targets/progress-made-cutting-emissions/kyoto-2nd-commitment-period-2013-20_en (visited on 05/10/2022).
+<a id="7">[1]</a> European Commission. Kyoto 1st commitment period (2008–12). url: https://ec.europa.eu/clima/eu-action/climate-strategies-targets/progress-made-cutting-emissions/kyoto-1st-commitment-period-2008-12_en (visited on 05/10/2022).
 
-[9] European Commission. European Climate Law. url: https://ec.europa.eu/clima/eu-action/european-green-deal/european-climate-law_en (visited on 05/10/2022).
+<a id="8">[1]</a> European Commission. Kyoto 2nd commitment period (2013–20). url: https://ec.europa.eu/clima/eu-action/climate-strategies-targets/progress-made-cutting-emissions/kyoto-2nd-commitment-period-2013-20_en (visited on 05/10/2022).
 
-[10] Patrick Bolton and Marcin Kacperczyk. “Do investors care about carbon risk?” In: Journal of Financial Economics 142 (2021), pp. 517–549.
+<a id="9">[1]</a> European Commission. European Climate Law. url: https://ec.europa.eu/clima/eu-action/european-green-deal/european-climate-law_en (visited on 05/10/2022).
 
-[11] NewCo. Qu’est-ce qu’une holding ? url: https://newco.ch/fr/blog/qu-est-ce-qu-une-holding--52.
+<a id="10">[1]</a> Patrick Bolton and Marcin Kacperczyk. “Do investors care about carbon risk?” In: Journal of Financial Economics 142 (2021), pp. 517–549.
 
-[12] R.E.A Holdings plc. url: https://www.rea.co.uk/websites/reaholdingsplc/English/1/home.html (visited on 05/11/2022).
+<a id="11">[1]</a> NewCo. Qu’est-ce qu’une holding ? url: https://newco.ch/fr/blog/qu-est-ce-qu-une-holding--52.
 
-[13] Wikipédia. EVN (entreprise). 2019. url: https://fr.wikipedia.org/wiki/EVN_(entreprise) (visited on 05/11/2022).
+<a id="12">[1]</a> R.E.A Holdings plc. url: https://www.rea.co.uk/websites/reaholdingsplc/English/1/home.html (visited on 05/11/2022).
 
-[14] TUBACEX GROUP. url: https://www.tubacex.com (visited on 05/11/2022).
+<a id="13">[1]</a> Wikipédia. EVN (entreprise). 2019. url: https://fr.wikipedia.org/wiki/EVN_(entreprise) (visited on 05/11/2022).
 
-[15] TUBACEX GROUP, Environment. url: https://www.tubacex.com/tubacex-group/prevention-environment-quality/environment/ (visited on 05/11/2022).
+<a id="14">[1]</a> TUBACEX GROUP. url: https://www.tubacex.com (visited on 05/11/2022).
 
-[16] About umicore. url: https://www.umicore.com/en/about/ (visited on 05/11/2022).
+<a id="15">[1]</a> TUBACEX GROUP, Environment. url: https://www.tubacex.com/tubacex-group/prevention-environment-quality/environment/ (visited on 05/11/2022).
 
-[17] BASF. url: https://en.wikipedia.org/wiki/BASF (visited on 05/11/2022).
+<a id="16">[1]</a> About umicore. url: https://www.umicore.com/en/about/ (visited on 05/11/2022).
 
-[18] Wikipédia. Systemair. 2022. url: https://fr.wikipedia.org/wiki/Systemair (visited on 05/11/2022).
+<a id="17">[1]</a> BASF. url: https://en.wikipedia.org/wiki/BASF (visited on 05/11/2022).
 
-[19] Wikipédia. Stellantis. 2022. url: https://fr.wikipedia.org/wiki/Stellantis (visited on 05/11/2022).
+<a id="18">[1]</a> Wikipédia. Systemair. 2022. url: https://fr.wikipedia.org/wiki/Systemair (visited on 05/11/2022).
 
-[20] DNO. url: https://www.dno.no (visited on 05/11/2022).
+<a id="19">[1]</a> Wikipédia. Stellantis. 2022. url: https://fr.wikipedia.org/wiki/Stellantis (visited on 05/11/2022).
 
-[21] ZIGNAGO VETRO. url: https://zignagovetro.com/fr/ (visited on 05/11/2022).
+<a id="20">[1]</a> DNO. url: https://www.dno.no (visited on 05/11/2022).
 
-[22] Amiad Water Systems. url: https://fr.amiad.com (visited on 05/11/2022).
+<a id="21">[1]</a> ZIGNAGO VETRO. url: https://zignagovetro.com/fr/ (visited on 05/11/2022).
 
-[23] Massimo Zanetti. url: https://www.mzb-group.com (visited on 05/10/2022).
+<a id="22">[1]</a> Amiad Water Systems. url: https://fr.amiad.com (visited on 05/11/2022).
 
-[24] CREALOGIX. url: https://crealogix.com/en (visited on 05/10/2022).
+<a id="23">[1]</a> Massimo Zanetti. url: https://www.mzb-group.com (visited on 05/10/2022).
+
+<a id="24">[1]</a> CREALOGIX. url: https://crealogix.com/en (visited on 05/10/2022).

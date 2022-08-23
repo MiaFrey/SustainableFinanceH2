@@ -46,7 +46,7 @@ We find that the number one polluter is a firm named \"Biffa\", which is a waste
 Figure 2: The worst polluters
 ```
 
-The second worst polluter is \"International Power\". Figure [2b] shows an astonishing evolution in their Scope intensities. Its emissions dropped each year this was due to the Scope 1 (main driver) decreasing drastically. Hence, as in the case of Biffa, its main driver was Scope 1, which is reasonable as the company is working in the energy sector (mostly non-renewable). Then the data ends in 2011 as the company merged with another in the year that followed [@bib:international_power].
+The second worst polluter is \"International Power\". Figure [2b] shows an astonishing evolution in their Scope intensities. Its emissions dropped each year this was due to the Scope 1 (main driver) decreasing drastically. Hence, as in the case of Biffa, its main driver was Scope 1, which is reasonable as the company is working in the energy sector (mostly non-renewable). Then the data ends in 2011 as the company merged with another in the year that followed [[5]](#5).
 
 Next, we can see that the minimum values (plotted in Figure [3a]) range from 5 to 7096 tCO2e/mln$ and are on average around 256 tCO2e/mln$. While the maximum scope intensities range from 24 to 25,729 tCO2e/mln$ and are on average 462 tCO2e/mln$. Both these values are also sensitive to extremes but they give a great picture of the emission range across firms. For instance, it can be observed that the graph with the minima has more variation, hence the minimum Scope values differ more from one firm to another.
 
@@ -98,9 +98,9 @@ To take a closer look at the values that range below 2000 tCO2e/mln$, two more h
 Figure 7: Histogram of the mean Scopes linear with range 50 & 2000 CO2e
 ```
 
-To observe the evolution of Scopes through the years, we plot the mean Scope emissions per year (Figure [8]). This is a key plot and shows that the emissions dropped drastically, especially, in 2008 because of the financial crisis. It then increased a little again, leading to another big drop in the following years until 2014. This is due to a variety of reasons from the growth of renewables, the use of less carbon-intensive fuels, energy efficiency improvements to structural changes in the economy and a recession [@bib:eea2014]. This graph is \"great news\", as the emissions already drastically decreased, however it is sadly not sufficient enough a drop to limit global warming to 2 degrees.
+To observe the evolution of Scopes through the years, we plot the mean Scope emissions per year (Figure [8]). This is a key plot and shows that the emissions dropped drastically, especially, in 2008 because of the financial crisis. It then increased a little again, leading to another big drop in the following years until 2014. This is due to a variety of reasons from the growth of renewables, the use of less carbon-intensive fuels, energy efficiency improvements to structural changes in the economy and a recession [[6]](#6). This graph is \"great news\", as the emissions already drastically decreased, however it is sadly not sufficient enough a drop to limit global warming to 2 degrees.
 
-In 1997 the Kyoto Protocol was established. It is a legally binding treaty with the aim of decreasing greenhouse gas (GHG) emissions and it included the EU, which went even further and committed to an 8% cut in their emissions. During the period 2008-2012, the members met this, compared to the base year (1990) [@bib:Kyoto1]. Then the second commitment period of Kyoto was established. It was a 20% reduction compared to 1990 [@bib:Kyoto2]. Following this is the European Climate Law. It aims to reach net-zero by 2050 and reduce net GHG emissions by at least 55% by 2030 compared to 1990 [@bib:EUClimateLaw]. Given the overall decrease observed in Figure [8], we estimate that the most likely driver of this was the Kyoto Protocol and that it is possible to achieve further decline, however, a sharp decrease is needed.
+In 1997 the Kyoto Protocol was established. It is a legally binding treaty with the aim of decreasing greenhouse gas (GHG) emissions and it included the EU, which went even further and committed to an 8% cut in their emissions. During the period 2008-2012, the members met this, compared to the base year (1990) [[7]](#7). Then the second commitment period of Kyoto was established. It was a 20% reduction compared to 1990 [[8]](#8). Following this is the European Climate Law. It aims to reach net-zero by 2050 and reduce net GHG emissions by at least 55% by 2030 compared to 1990 [[9]](#9). Given the overall decrease observed in Figure [8], we estimate that the most likely driver of this was the Kyoto Protocol and that it is possible to achieve further decline, however, a sharp decrease is needed.
 
 Based on this we decided to compare the starting year 2005 and the most recent year with the most data in 2019.
 
@@ -157,7 +157,7 @@ equal to 0.093 and corresponds to a portfolio WACI that is almost half the one o
 Table 1: Summary statistics of the different portfolios created
 ```
 
-One can see also in Table [1] and Figure [11] that aiming for a higher return increases the volatility as well as the carbon intensity of the portfolio. Bolton and Kacperczyk (2021) found that carbon emissions significantly affect stock returns and this is in line with what is found in the data of this report [@bib:return-emission]. The more one increases the targeted return the higher the carbon intensity, thus the higher the negative impact of the portfolio on the environment.
+One can see also in Table [1] and Figure [11] that aiming for a higher return increases the volatility as well as the carbon intensity of the portfolio. Bolton and Kacperczyk (2021) found that carbon emissions significantly affect stock returns and this is in line with what is found in the data of this report [[10]](#10). The more one increases the targeted return the higher the carbon intensity, thus the higher the negative impact of the portfolio on the environment.
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/110820736/185916381-63274b29-91b9-4b71-bf5f-1384cf0cdced.png" width="400" height="280">
@@ -214,9 +214,9 @@ Next comes the analysis of the three highest emitters in Europe, according to (F
 
 ## Firm 1 : R.E.A Holding
 
-The biggest polluter is a holding company. This is a firm that takes financial stakes in other companies and therefore participates in their direction and management [@bib:holding]. According to the theory, it is therefore expected that Scope 3 of this company will be high, as it is linked to the emissions released by the companies that the holding company finances. There are certain anomalies in the scope data that we were unfortunately not able to find explanations for during our research.
+The biggest polluter is a holding company. This is a firm that takes financial stakes in other companies and therefore participates in their direction and management [[11]](#11). According to the theory, it is therefore expected that Scope 3 of this company will be high, as it is linked to the emissions released by the companies that the holding company finances. There are certain anomalies in the scope data that we were unfortunately not able to find explanations for during our research.
 
-REA invests mainly in the cultivation of palm oil, a very polluting sector[@bib:rea]. That is why it is not surprising that this company is at the top of the list.
+REA invests mainly in the cultivation of palm oil, a very polluting sector [[12]](#12). That is why it is not surprising that this company is at the top of the list.
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/110820736/185917043-c5fdd3ef-5412-4e62-8569-c739ff086329.png" width="600" height="220">
@@ -228,7 +228,7 @@ Figure 13: Scopes of the firm REA HOLDINGS
 
 ## Firm 2: EVN
 
-EVN is an Austrian company that produces and distributes energy. In the following three graphs, one can see the different carbon intensities for each year[@bib:evn].
+EVN is an Austrian company that produces and distributes energy. In the following three graphs, one can see the different carbon intensities for each year [[13]](#13).
 
 The first thing to note is that the values for the years 2007 through 2012 are missing. This can have an impact on the average. Indeed, when we have fewer observations, the presence of extreme cases has a bigger influence on the average. For example, in 2005 the value for Scope 3 is much higher than the others.
 
@@ -244,13 +244,13 @@ Figure 14: Scopes of the firm EVN
 
 ## Firm 3: Tubacex
 
-Tubacex is a company producing pipes and their market is mainly constituted by Oil & Gas, Powergen, and Petrochemical industry[@bib:tubacex].
+Tubacex is a company producing pipes and their market is mainly constituted by Oil & Gas, Powergen, and Petrochemical industry [[14]](#14).
 
 First of all, the results are only based on four years, which could slightly distort the average.
 
 Scope 3 is responsible for its high overall score. This is reasonable as Scope 3 takes into account all down- and upstream emissions. Thus, the sale of their pipes mainly for purposes related to oil and gas explains their high Scope 3 intensity. We observe that something happens in 2018 which greatly increases scopes 1 and 2, however,we remain unsure of the reasons that cause this phenomena.
 
-Their website leads us to believe that they are trying to become more sustainable, notably by \"advanced materials leading to significantly improved energy efficiency; and reduction in CO2 emissions, as a result\"[@bib:tubacex2]. We note here that by implementing these various measures, they can decrease Scope 1 and 2 but not 3 which is responsible for their high result. Nevertheless, this is better than nothing but it means that it would not have a significant impact on their total carbon intensity.
+Their website leads us to believe that they are trying to become more sustainable, notably by \"advanced materials leading to significantly improved energy efficiency; and reduction in CO2 emissions, as a result\" [[15]](#15). We note here that by implementing these various measures, they can decrease Scope 1 and 2 but not 3 which is responsible for their high result. Nevertheless, this is better than nothing but it means that it would not have a significant impact on their total carbon intensity.
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/110820736/185917401-68cb2369-46b9-497c-b7ed-d64498044c6b.png" width="600" height="220">
@@ -274,7 +274,7 @@ This exercise addresses building a decarbonized portfolio, hence applying portfo
 Table 5: Summary statistics
 ```
 
-In theory, firms with a higher carbon intensity have a higher return since carbon-intensive firms are perceived as riskier, and hence the investor wants to be compensated for the additional risk taken [@bib:return-emission]. In this exercise, the firms in the top tercile with the highest carbon intensity values are excluded. Hence, theoretically the firms with the highest average return disappear and the new portfolio will have a lower return. The same holds for volatility. As explained in Question 2, a firm with a high carbon intensity will have higher volatility. Yet, this is not what we find upon analysing the summary statistics. In Tble [5a] the annual average return is 0.047 and the volatility 0.154 but in [5b] the return is bigger (0.067) but the volatility (0.149) is smaller. Even though the minimum return got smaller (-0.157 \> -0.132) but the maximum one only slightly bigger (0.126 \< 0.153). Thus, the 50 randomly selected firms did not have a positive correlation between carbon intensity and return. This must be due to chance as they were selected from a large pool of possible firms. All of these points can also be observed in Figure [16].
+In theory, firms with a higher carbon intensity have a higher return since carbon-intensive firms are perceived as riskier, and hence the investor wants to be compensated for the additional risk taken [[10]](#10). In this exercise, the firms in the top tercile with the highest carbon intensity values are excluded. Hence, theoretically the firms with the highest average return disappear and the new portfolio will have a lower return. The same holds for volatility. As explained in Question 2, a firm with a high carbon intensity will have higher volatility. Yet, this is not what we find upon analysing the summary statistics. In Tble [5a] the annual average return is 0.047 and the volatility 0.154 but in [5b] the return is bigger (0.067) but the volatility (0.149) is smaller. Even though the minimum return got smaller (-0.157 \> -0.132) but the maximum one only slightly bigger (0.126 \< 0.153). Thus, the 50 randomly selected firms did not have a positive correlation between carbon intensity and return. This must be due to chance as they were selected from a large pool of possible firms. All of these points can also be observed in Figure [16].
 
 Furthermore, one also observes that the Sharpe ratio increases after the exclusion of the most polluting companies (0.227 \< 0.364). This measure of risk-adjusted return shows that it is more interesting to invest in the minimum variance portfolio with the exclusion. Yet, it remains lower than 1. The potential gain generated is therefore not high enough to compensate for the risk taken by investing, even though this is rare to find. Finally, by omitting the top tercile of the polluting companies, the overall carbon intensity of the portfolio decreases drastically. In [Homework 1](https://github.com/MiaFrey/SustainableFinanceH1) the portfolio had a carbon intensity of 111.591 tCO2e/mln$ versus \"only\" 31.9005 tCO2e/mln$ in Homework 2. It decreased by more than one third since by excluding the top tercile of polluters one excludes more than a third of the emissions.
 
@@ -328,7 +328,7 @@ To find the relationship between the return and the carbon emissions, the correl
 Table 6: Correlation between returns and portfolio carbon intensity
 ```
 
-In Question 2, it is explained that the relationship between returns and the emission rate of firms is positive. In Table [6], in both cases, the correlation is low but positive. Additionally, it can be observed that it increased for each quintile (except between quintiles 4 and 5 in the value-weighted portfolio). These results are consistent with the findings of Bolton and Kacperczyka. They call it the carbon premium and explain it with the fact that investing in carbon-intensive industries is perceived as riskier and thus the investors need to be compensated for it [@bib:return-emission].
+In Question 2, it is explained that the relationship between returns and the emission rate of firms is positive. In Table [6], in both cases, the correlation is low but positive. Additionally, it can be observed that it increased for each quintile (except between quintiles 4 and 5 in the value-weighted portfolio). These results are consistent with the findings of Bolton and Kacperczyka. They call it the carbon premium and explain it with the fact that investing in carbon-intensive industries is perceived as riskier and thus the investors need to be compensated for it [[10]](#10).
 
 Average returns for the short-long (SL) portfolio:
 
@@ -386,7 +386,7 @@ As a result of the new optimisation, it is interesting to visualise how the weig
 Figure 20: Differences of the allocated weights per firm
 ```
 
-In Figure [20], the difference in weights between Homework 2 and 1 can be observed. If we look at the minimum variance portfolio of December 2019, we see that only two firms have been completely removed from the portfolio. The first one is called Umicore. It is a global material technology and recycling group [@bib:umicore]. Umicore's Scope 3 is the biggest, likely due to the use of the recycled materials and the supply chain before the material got recycled. The second company is BASF, a chemical firm [@bib:BASF]. Its Scope 1 is high but Scope 3 is even higher. Once again this can be explained by their business as chemical production itself emits a lot of emissions and so does its supply chain all the way from mining to recycling.
+In Figure [20], the difference in weights between Homework 2 and 1 can be observed. If we look at the minimum variance portfolio of December 2019, we see that only two firms have been completely removed from the portfolio. The first one is called Umicore. It is a global material technology and recycling group [[16]](#16). Umicore's Scope 3 is the biggest, likely due to the use of the recycled materials and the supply chain before the material got recycled. The second company is BASF, a chemical firm [[17]](#17). Its Scope 1 is high but Scope 3 is even higher. Once again this can be explained by their business as chemical production itself emits a lot of emissions and so does its supply chain all the way from mining to recycling.
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/110820736/186093821-f6b53f48-1e42-4689-89b7-03e7048f63f2.png" width="600" height="220">
@@ -396,7 +396,7 @@ In Figure [20], the difference in weights between Homework 2 and 1 can be observ
 Table 8:  Most deleted companies
 ```
 
-Table [8] [@bib:umicore], [@bib:BASF], [@bib:systemair], [@bib:stellantis], [@bib:dno], [@bib:zignago_vetro], [@bib:amiad_water_systems], [@bib:massimo] summarises the companies that were not considered in the new portfolio more than half of the time (48 months /2 = 24). \"Deleted\" means that the company was not part of the new portfolio \"Nb deleted\" times. The \"Products/Services\" explain what they do and
+Table [8] [[16]](#16), [[17]](#17), [[18]](#18), [[19]](#19), [[20]](#20), [[21]](#21), [[22]](#22), [[23]](#23) summarises the companies that were not considered in the new portfolio more than half of the time (48 months /2 = 24). \"Deleted\" means that the company was not part of the new portfolio \"Nb deleted\" times. The \"Products/Services\" explain what they do and
 \"Scope(S)\" mentions the highest Scope, and if another one is high as well it is written in brackets. The two companies not considered in the most recent year (mentioned above) are also on this list, as well as the company MASSIMO ZANETTI that is talked about in the following paragraph.
 
 To push the analysis of Figure [20] further, the company with the biggest (CREALOGIX HOLDING) and smallest (MASSIMO ZANETTI) difference in weight allocation are analysed in more depth.
@@ -409,7 +409,7 @@ To push the analysis of Figure [20] further, the company with the biggest (CREAL
 Figure 21: Plot of sum of the 3 Scopes
 ```
 
-The two graphs in Figure [21] explain why more weight was allocated to \"CREALOGIX HOLDING\" than to \"MASSIMO ZANETTI\". Indeed, the emissions are much higher for the company \"MASSIMO ZANETTI\". It is a coffee production company and its Scope 3 has the highest emissions [@bib:massimo]. This result is consistent with reality because coffee is one of the products that emit the most CO2 during its entire supply chain. This can be observed in Figure [22], where it can be seen that the biggest part of the emissions is related to the cultivation of the coffee beans, which is included in Scope 3 of the company.
+The two graphs in Figure [21] explain why more weight was allocated to \"CREALOGIX HOLDING\" than to \"MASSIMO ZANETTI\". Indeed, the emissions are much higher for the company \"MASSIMO ZANETTI\". It is a coffee production company and its Scope 3 has the highest emissions [[23]](#23). This result is consistent with reality because coffee is one of the products that emit the most CO2 during its entire supply chain. This can be observed in Figure [22], where it can be seen that the biggest part of the emissions is related to the cultivation of the coffee beans, which is included in Scope 3 of the company.
 
 
 <p align="center">
@@ -420,7 +420,7 @@ The two graphs in Figure [21] explain why more weight was allocated to \"CREALOG
 Figure 22: Food greenhouse gas emissions across the food supply chain
 ```
 
-The company \"CREALOGIX HOLDING\" has a very low Scope 1 and 2. This is a result of the fact that it is a holding company. This means that it has few direct emissions. Moreover, it is a holding company that mainly supports banks, thus leading to a low Scope 3 [@bib:crealogix].
+The company \"CREALOGIX HOLDING\" has a very low Scope 1 and 2. This is a result of the fact that it is a holding company. This means that it has few direct emissions. Moreover, it is a holding company that mainly supports banks, thus leading to a low Scope 3 [[24]](#24).
 
 # Collaborators
 - [Mia Frey](https://www.linkedin.com/in/mia-frey-28209a208/)

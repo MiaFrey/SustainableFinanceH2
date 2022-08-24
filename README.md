@@ -189,9 +189,8 @@ Table 3: Rest of the world top 25 emitting firms
 
 First of all, it can be observed that the most polluting companies in the world emit much more than the ones in Europe. Indeed, the emission of the 25 highest firms is around 15'000 tCO2e/mln$ which is three times higher than the European firm emitting the most and around 15 times higher than the other highest emitters of Europe. Moreover, these companies are often in Asia. To better understand the results the following table summarises the data by continent:
 
-
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/185916702-bbd5ef1f-8eaa-4373-96ab-9482d7d38583.png" width="400" height="280">
+    <img src="https://user-images.githubusercontent.com/110820736/185916702-bbd5ef1f-8eaa-4373-96ab-9482d7d38583.png" width="400">
 </p>
 
 ```
